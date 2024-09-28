@@ -1,0 +1,38 @@
+$background-base: #FAF7F2;
+$background-strong: #3B442F;
+$button-color: #D0D9BE;
+$text-strong: #2F3428;
+$text-medium: #3E4437;
+$text-soft: #8D9089;
+
+.background-base {
+  background-color: $background-base;
+}
+
+.background-strong {
+  background-color: $background-strong;
+}
+
+.button {
+  background-color: $button-color;
+  display: flex;
+  align-self: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 999px;
+  border: none;
+}
+
+.text-strong {
+  color: $text-strong;
+}
+
+.text-medium {
+  color: $text-medium;
+}
+
+.text-soft {
+  color: $text-soft;
+}

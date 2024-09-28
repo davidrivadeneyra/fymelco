@@ -1,0 +1,24 @@
+@import './components/reset';
+@import './components/fonts';
+@import './components/layout';
+@import './components/colors';
+
+
+.wrapper-main-banner {
+    background-image: url(../assets/ghuna-banner-tiny.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main-banner {
+    height: 90vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}

@@ -1,0 +1,97 @@
+// Variables de fuente
+$font-titles: 'Raleway', sans-serif;
+$font-regular: 'Plus Jakarta Sans', sans-serif;
+
+// Variables de peso de fuente
+$font-weight-title: 600; // Semibold para Raleway
+$font-weight-regular: 400; // Regular para Plus Jakarta Sans
+$font-weight-bold: 400; // Bold para Plus Jakarta Sans
+
+
+.headline-bigger {
+  font-family: $font-titles;
+  font-weight: $font-weight-title;
+  font-size: 72px;
+  line-height: 1.1;
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.headline-big {
+  font-family: $font-titles;
+  font-weight: $font-weight-title;
+  font-size: 48px;
+  line-height: 1.1;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.headline-small {
+  font-family: $font-titles;
+  font-weight: $font-weight-title;
+  font-size: 19px;
+  line-height: 1.1;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.headliner-smaller {
+  font-family: $font-titles;
+  font-weight: $font-weight-title;
+  font-size: 16px;
+  line-height: 1.1;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.p-regular {
+  font-family: $font-regular;
+  font-weight: $font-weight-regular;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.p-small {
+  font-family: $font-regular;
+  font-weight: $font-weight-regular;
+  font-size: 14px;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.b-regular {
+  font-family: $font-regular;
+  font-weight: $font-weight-bold;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.b-small {
+    font-family: $font-regular;
+    font-weight: $font-weight-bold;
+    font-size: 14px;
+    line-height: 1.6;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+}

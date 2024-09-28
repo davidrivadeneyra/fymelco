@@ -1,0 +1,53 @@
+// Variables del layout
+$max-width: 1440px;
+$padding-desktop: 32px;
+$padding-mobile: 24px;
+
+// Mixin para el contenedor del layout
+@mixin layout-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: $padding-desktop;
+  padding-right: $padding-desktop;
+
+  @media (max-width: 768px) {
+    padding-left: $padding-mobile;
+    padding-right: $padding-mobile;
+  }
+}
+
+.layout-full-width {
+    width: 100%;
+}
+
+.layout-container {
+  @include layout-container;
+}
+
+.header {
+  @include layout-container;
+}
+
+.main-content {
+  @include layout-container;
+}
+
+.footer {
+  @include layout-container;
+}
+
+.card-grid {
+    display: flex;
+    gap: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+// .card {
+
+// }
+
+.card-img {
+    width: 100%;
+    
+}
