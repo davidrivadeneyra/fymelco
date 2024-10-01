@@ -1,24 +1,30 @@
-const slider = document.querySelector('.slider');
-const next = document.getElementById('next');
-const prev = document.getElementById('prev');
+window.addEventListener('DOMContentLoaded', (event) => {
+  const cards = document.querySelectorAll('.card');
+  const leftButton = document.querySelector('.button-slider-right');
+  const rightButton = document.querySelector('.button-slider-left');
+  const controllefttButton = document.querySelector('.control-button-left');
+  const controlrightButton = document.querySelector('.control-button-right');
 
-let currentIndex = 0;
+  function positionButtons() {
+      cards.forEach(card => {
+          const img = card.querySelector('.card-img-wrapper');
+          console.log(img.clientHeight)
+          if (img) {
+              const imgHeight = img.clientHeight; // Altura de la imagen
+              const buttonOffset = (imgHeight / 2) - (leftButton.clientHeight / 2);
 
-next.addEventListener('click', () => {
-  const maxIndex = slider.children.length - 4; // Ajustar para desktop
-  if (window.innerWidth <= 768) {
-    maxIndex = slider.children.length - 2; // Ajustar para mobile
+              // Posiciona los botones
+              leftButton.style.top = `${buttonOffset}px`;
+              rightButton.style.top = `${buttonOffset}px`;
+              controllefttButton.style.top = `${buttonOffset}px`;
+              controlrightButton.style.top = `${buttonOffset}px`;
+          }
+      });
   }
 
-  if (currentIndex < maxIndex) {
-    currentIndex++;
-    slider.style.transform = `translateX(-${currentIndex * (slider.children[0].offsetWidth + 16)}px)`;
-  }
-});
+  // Llama a la función al cargar la página
+  positionButtons();
 
-prev.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    slider.style.transform = `translateX(-${currentIndex * (slider.children[0].offsetWidth + 16)}px)`;
-  }
+  // También puedes llamar a esta función si cambias el tamaño de la ventana
+  window.addEventListener('resize', positionButtons);
 });
