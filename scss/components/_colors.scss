@@ -11,6 +11,7 @@ $green-600: #2F3428;
 
 .background-base {
   background-color: $background-base;
+  position: relative;
 }
 
 .background-strong {
@@ -69,9 +70,3 @@ $green-600: #2F3428;
   text-align: center;
 }
 
-.italic {
-  font-style: italic;
-}
-.uppercase {
-  text-transform: uppercase;
-}

@@ -40,16 +40,83 @@ $padding-mobile: 24px;
   @include layout-container;
 }
 
-.card-grid {
-    display: flex;
-    gap: 32px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+.slider {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.padding-64 {
+  padding-top: 64px;
+}
+
+
+.button-slider-left {
+  position: absolute;
+  z-index: 10;
+  left: -24px;
+  top: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; 
+  height: 48px;
+  background-color: $button-color;
+  cursor: pointer; 
+  border: none;
+  border-radius: 100%;
+}
+
+.button-slider-right {
+  position: absolute;
+  z-index: 10;
+  right: -24px;
+  top: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; 
+  height: 48px;
+  background-color: $button-color;
+  cursor: pointer; 
+  border: none;
+  border-radius: 100%;
+}
+
+.button-slider-icon {
+  color: $text-strong;
+  height: 24px;
+  width: 24px;
+}
+
+
+
+.card-ideales {
+  display: flex;
+  gap: 32px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 100%;
+}
+
+ @media (max-width: 768px) {
+  .card-ideales {
+    flex-direction: column;
+  }
 }
 
 .relative {
   position: relative;
 }
+
+.hidden {
+  overflow: hidden;
+}
+
 .card-img {
   width: 100%;
   position: relative;
@@ -63,17 +130,25 @@ $padding-mobile: 24px;
   width: 24px; 
   top: 24px;
   right: 24px;
+  color: $text-medium;
 }
 
+
+
 .mini-card-items {
-  background-color: red;
   width: 212px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 32px;
-  // position: absolute;
   z-index: 10;
 }
+
+.mini-card-items-right {
+  @extend .mini-card-items;
+  align-items: flex-end
+}
+
 
 .mini-card {
   display: flex;
@@ -94,4 +169,36 @@ $padding-mobile: 24px;
 
 .card-big {
   display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex: 1 1 0;
+}
+
+.card-img-big {
+  flex: 1;
+  object-fit: cover;
+  width: 250px;
+  // max-width: calc(100% - 200px);
+  height: auto;
+  box-sizing: border-box; 
+}
+
+.background-topbar {
+  display: flex;
+  padding: 16px 32px;
+  background-color: $background-strong;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+// REMOVER ESTAS CLASES LUEGO DE CREAR EL SLIDER DE CARDS
+.card-hidden {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card-hidden {
+    display: none;
+  }
 }

@@ -6,57 +6,144 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
 
 </head>
-<body class="background-base ">
+<body class="background-base">
+    <header class="layout-full-width header-fixed">
+        <div class="background-topbar"> 
+            <p class="p-small uppercase text-white">Registrate y obtené un 15% de descuento en tu primera compra (no acumulable con otras promociones)</p>
+        </div>
+        <div class="header">
+            <div class="header__left">
+              <img src="assets/logo.svg" alt="Logo" class="header__logo" />
+            </div>
+            <div class="header__center">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item b-small uppercase"><a href="#">New in</a></li>
+                  <li class="nav__item b-small uppercase"><a href="#">Anillo</a></li>
+                  <li class="nav__item b-small uppercase"><a href="#">Pulseras</a></li>
+                  <li class="nav__item b-small uppercase"><a href="#">Colgantes</a></li>
+                  <li class="nav__item b-small uppercase"><a href="#">Caravanas</a></li>
+                  <li class="nav__item b-small uppercase"><a href="#">Ear cuff</a></li>
+                  <li class="nav__item b-small uppercase"><a href="#">Sale</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__right">
+                <div class="header__right">
+                    <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__menu">
+                        <use xlink:href="icons/menu.svg#menu"></use>
+                      </svg>
+                      <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
+                        <use xlink:href="icons/search.svg#search"></use>
+                      </svg>
+                </div>
+        
+                <img src="assets/logo.svg" alt="Logo" class="header__logo-mobile" />
+            <div class="header__right header__right-user-bag">
+                <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
+                    <use xlink:href="icons/user.svg#user"></use>
+                  </svg>
+                  <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__heart" >
+                    <use xlink:href="icons/heart.svg#heart"></use>
+                  </svg>
+                  <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon" >
+                    <use xlink:href="icons/bag.svg#bag"></use>
+                  </svg>
+            </div>
+             
+            </div>
+            <!-- Menú Mobile -->
+            <div class="mobile-menu" id="mobileMenu">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">New in</a></li>
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Anillo</a></li>
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Pulseras</a></li>
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Colgantes</a></li>
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Caravanas</a></li>
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Ear cuff</a></li>
+                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Sale</a></li>
+              </ul>
+            </div>
+        </div>         
+    </header>
+
+           
+    
+    
+
+
     <section class="layout-full-width wrapper-main-banner">
         <div class="layout-container main-banner">
             <h1 class="headline-bigger">TEMPORADA DE COLGANTES</h1>
             <h2 class="headline-big">Nuevos arribos, nueva colección</h2>
             <button class="b-regular button">Ver más</button>
-        </div>
-       
+        </div>  
     </section>
 
-    <section class="layout-full-width">
-        <div class="layout-container card-grid">
-            <div class="relative">
-                <div class="card-img">
-                    <img class="card-img" src="./assets/card-01.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+    <section class="layout-full-width padding-64">
+        <div class="layout-container hidden">
+            <div class="slider">
+                <button class="button-slider-left">
+                    <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
+                        <use xlink:href="icons/caret-left.svg#caret-left"></use>
+                    </svg>
+                </button>
+                <button class="button-slider-right">
+                    <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
+                        <use xlink:href="icons/caret-right.svg#caret-right"></use>
+                    </svg>
+                </button>
+                <div class="card relative">
+                    <div class="card-img">
+                        <img class="card-img" src="./assets/card-01.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+    
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft ">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft ">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
-            </div>
-            <div class="relative">
-                <div class="card-img"> 
-                    <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+                <div class="card relative">
+                    <div class="card-img"> 
+                        <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
-            </div>
-            <div class="relative">
-                <div class="card-img">
-                    <img class="card-img" src="./assets/card-03.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+                <div class="card card-hidden relative">
+                    <div class="card-img">
+                        <img class="card-img" src="./assets/card-03.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
-            </div>
-            <div class="relative">
-                <div class="card-img">
-                    <img class="card-img" src="./assets/card-04.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+                <div class="card card-hidden relative">
+                    <div class="card-img">
+                        <img class="card-img" src="./assets/card-04.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
+               
             </div>
+            
         </div>
        
     </section>
@@ -75,7 +162,8 @@
         
         <!-- MEGA CARDS -->
         <div class="layout-container">
-            <div class="relative card-grid">
+            <div class="card-ideales ">
+                
                 <div class="card-big">
                     <div class="mini-card-items">
                         <div class="mini-card">
@@ -100,10 +188,11 @@
                             </div>
                         </div>
                     </div>
-                    <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
+                    <img class="card-img-big" src="./assets/card-02.png" alt="Sortijas Ghuna">
                 </div>
                 <div class="card-big">
-                    <div class="mini-card-items">
+                    <img class="card-img-big" src="./assets/card-02.png" alt="Sortijas Ghuna">
+                    <div class="mini-card-items-right">
                         <div class="mini-card">
                             <img class="mini-card-img" src="./assets/card-02.png">
                             <div>
@@ -126,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
+                    
                 </div>
                 
             </div>
@@ -136,6 +225,7 @@
     </section>
     <section class="layout-full-width">
         <div class="layout-container">
+            
             <div class="divider-section">
                 <hr class="divider-line">
                 <div class="divider-text">
@@ -146,44 +236,64 @@
             </div> 
         </div>
         
-        <div class="layout-container card-grid">
-            
-            <div class="relative">
-                <div class="card-img">
-                    <img class="card-img" src="./assets/card-01.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
-                </div>
+        <div class="layout-container">
+            <div class="slider">
+                <button class="button-slider-left">
+                    <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
+                        <use xlink:href="icons/caret-left.svg#caret-left"></use>
+                    </svg>
+                </button>
+                <button class="button-slider-right">
+                    <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
+                        <use xlink:href="icons/caret-right.svg#caret-right"></use>
+                    </svg>
+                </button>
 
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft ">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
-            </div>
-            <div class="relative">
-                <div class="card-img"> 
-                    <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+                <div class="card relative">
+                    <div class="card-img">
+                        <img class="card-img" src="./assets/card-01.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+    
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft ">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
-            </div>
-            <div class="relative">
-                <div class="card-img">
-                    <img class="card-img" src="./assets/card-03.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+                <div class="card relative">
+                    <div class="card-img"> 
+                        <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
-            </div>
-            <div class="relative">
-                <div class="card-img">
-                    <img class="card-img" src="./assets/card-04.png" alt="Sortijas Ghuna">
-                    <img class="card-icon" src="./icons/heart.svg" alt="Sortijas Ghuna">
+                <div class="card card-hidden relative">
+                    <div class="card-img">
+                        <img class="card-img" src="./assets/card-03.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
                 </div>
-                <p class="p-regular text-medium">Colgante Sol</p>
-                <p class="p-small text-soft">Doble anillo unido</p>
-                <p class="b-regular text-medium">$990</p>
+                <div class="card card-hidden relative">
+                    <div class="card-img">
+                        <img class="card-img" src="./assets/card-04.png" alt="Sortijas Ghuna">
+                       <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+            <use xlink:href="icons/heart.svg#heart"></use>
+          </svg>
+                    </div>
+                    <p class="p-regular text-medium">Colgante Sol</p>
+                    <p class="p-small text-soft">Doble anillo unido</p>
+                    <p class="b-regular text-medium">$990</p>
+                </div>
             </div>
         </div>
        
@@ -191,4 +301,5 @@
 
     
 </body>
+<script src="script.js"></script>s
 </html>
