@@ -10,10 +10,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
           const img = card.querySelector('.card-img-wrapper');
           console.log(img.clientHeight)
           if (img) {
-              const imgHeight = img.clientHeight; // Altura de la imagen
+              const imgHeight = img.clientHeight; 
               const buttonOffset = (imgHeight / 2) - (leftButton.clientHeight / 2);
 
-              // Posiciona los botones
               leftButton.style.top = `${buttonOffset}px`;
               rightButton.style.top = `${buttonOffset}px`;
               controllefttButton.style.top = `${buttonOffset}px`;
@@ -22,9 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       });
   }
 
-  // Llama a la función al cargar la página
   positionButtons();
 
-  // También puedes llamar a esta función si cambias el tamaño de la ventana
   window.addEventListener('resize', positionButtons);
 });
