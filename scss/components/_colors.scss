@@ -1,9 +1,13 @@
 $background-base: #FAF7F2;
 $background-strong: #3B442F;
+$white :#FFFFFF;
 $button-color: #D0D9BE;
 $text-strong: #2F3428;
 $text-medium: #3E4437;
 $text-soft: #8D9089;
+$text-light: #afb1ad;
+$green-200: #C7C2AC;
+$green-600: #2F3428;
 
 .background-base {
   background-color: $background-base;
@@ -35,4 +39,39 @@ $text-soft: #8D9089;
 
 .text-soft {
   color: $text-soft;
+}
+
+.text-green-600 {
+  color: $green-600;
+}
+
+.text-white {
+  color: $white;
+}
+
+.divider-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.divider-line {
+  flex-grow: 1;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $text-light;
+}
+
+.divider-text {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+.uppercase {
+  text-transform: uppercase;
 }
