@@ -88,8 +88,7 @@
     }
   }
   
-  // Responsive
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     .header {
       padding: 16px 24px;
 
@@ -111,8 +110,6 @@
       &__logo-mobile {
         display: block;
         width: 128px;
-        // justify-content: center;
-        // align-items: center;
     }
 
       &__menu {
@@ -150,7 +147,6 @@
       }
     }
   
-    // Mostrar el menú cuando se presiona el botón del menú
     .mobile-menu {
       display: flex;
       flex-direction: column;
@@ -170,25 +166,4 @@
   .header-fixed {
     z-index: 20;
     position: fixed;
-  }
-
-  .button-slider {
-    position: absolute;
-    z-index: 10;
-    left: -24px;
-    top: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px; 
-    height: 48px;
-    background-color: $button-color;
-    cursor: pointer; 
-    border: none;
-    border-radius: 100%;
-  }
-  .button-slider-icon {
-    color: $text-strong;
-    height: 24px;
-    width: 24px;
   }

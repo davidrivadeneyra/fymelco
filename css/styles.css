@@ -24,6 +24,36 @@ img {
 .absolute {
   position: absolute; }
 
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("/assets/fonts/RalewayItalic-300.woff2");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("/assets/fonts/RalewayItalic-400.woff2");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
 .headline-bigger {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -42,6 +72,16 @@ img {
     .headline-big {
       font-size: 32px; } }
 
+.headline-big-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.1;
+  font-style: italic; }
+  @media (max-width: 768px) {
+    .headline-big-italic {
+      font-size: 32px; } }
+
 .headline-small {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -49,6 +89,16 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-small {
+      font-size: 16px; } }
+
+.headline-small-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.1;
+  font-style: italic; }
+  @media (max-width: 768px) {
+    .headline-small-italic {
       font-size: 16px; } }
 
 .headliner-smaller {
@@ -80,7 +130,7 @@ img {
 
 .b-regular {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.6; }
   @media (max-width: 768px) {
@@ -89,7 +139,7 @@ img {
 
 .b-small {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.6; }
   @media (max-width: 768px) {
@@ -98,7 +148,7 @@ img {
 
 .b-small {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.6; }
   @media (max-width: 768px) {
@@ -353,13 +403,6 @@ img {
   justify-content: center;
   align-items: center; }
 
-.card-hidden {
-  display: block; }
-
-@media (max-width: 768px) {
-  .card-hidden {
-    display: none; } }
-
 .background-base {
   background-color: #FAF7F2;
   position: relative; }
@@ -520,7 +563,7 @@ img {
         color: #2F3428;
         font-size: 1.5rem; }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .header {
     padding: 16px 24px; }
     .header__left {
@@ -568,26 +611,6 @@ img {
 .header-fixed {
   z-index: 20;
   position: fixed; }
-
-.button-slider {
-  position: absolute;
-  z-index: 10;
-  left: -24px;
-  top: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  background-color: #D0D9BE;
-  cursor: pointer;
-  border: none;
-  border-radius: 100%; }
-
-.button-slider-icon {
-  color: #2F3428;
-  height: 24px;
-  width: 24px; }
 
 .wrapper-main-banner {
   background-image: url(../assets/ghuna-banner-tiny.png);
