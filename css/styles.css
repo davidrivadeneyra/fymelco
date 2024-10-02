@@ -115,7 +115,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-bigger {
-      font-size: 48px; } }
+      font-size: 40px; } }
 
 .headline-big {
   font-family: "Raleway", sans-serif;
@@ -124,7 +124,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-big {
-      font-size: 32px; } }
+      font-size: 27px; } }
 
 .headline-big-italic {
   font-family: "Raleway", sans-serif;
@@ -787,7 +787,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-bigger {
-      font-size: 48px; } }
+      font-size: 40px; } }
 
 .headline-big {
   font-family: "Raleway", sans-serif;
@@ -796,7 +796,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-big {
-      font-size: 32px; } }
+      font-size: 27px; } }
 
 .headline-big-italic {
   font-family: "Raleway", sans-serif;
