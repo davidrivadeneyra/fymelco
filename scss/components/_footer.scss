@@ -132,11 +132,11 @@
     margin-bottom: 24px;
  }
 .footer-mobile-title {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 14px;
     display: block;
-    color: $background-base !important;
+    color: $background-base;
     text-transform: uppercase;
 }
 
@@ -190,8 +190,13 @@
   padding: 64px 24px;
   text-align: center;
 }
+@media (min-width: 1281px) {
+  .footer-register-mobile {
+    display: none;
+  }
+}
 
-.footer-mobile-title {
+.footer-mobile-headline {
   font-family: 'Raleway', sans-serif;
       font-weight: 600;
       color: $green-600;
@@ -214,33 +219,33 @@
 }
 .footer-mobile-input {
   background-color: $white;
-              color: $text-strong;
-              padding: 8px 16px;
-              border: none;
-              cursor: pointer;
-              font-family: 'Plus Jakarta Sans', sans-serif;
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 1.6;
-              text-transform: uppercase;
-              width: 100%;
+  color: $text-strong;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  width: 100%;
 
 }
 .footer-mobile-button {
   background-color: $green-100;
-              color: $text-strong;
-              padding: 8px 16px;
-              border: none;
-              cursor: pointer;
-              font-family: 'Plus Jakarta Sans', sans-serif;
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 1.6;
-              text-transform: uppercase;
-  
-              &:hover {
-                background-color: $green-200;
-              }
+  color: $text-strong;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $green-200;
+  }
 
 }
 
