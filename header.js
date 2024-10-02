@@ -10,10 +10,11 @@ window.addEventListener('scroll', ()=> {
         transparentHeader.classList.add('header-hidden')
         whiteHeader.classList.remove('header-hidden') 
 
-    }  else if (currentScroll < lastScroll) {
+    }  else if (currentScroll === 0) {
         transparentHeader.classList.remove('header-hidden')
         whiteHeader.classList.add('header-hidden')
     }
 
     lastScroll = currentScroll
+    console.log(lastScroll)
 })
