@@ -323,7 +323,7 @@ img {
   position: relative;
   display: flex;
   gap: 32px;
-  padding: 0 24px;
+  padding: 0;
   width: 100%;
   transition: transform 0.3s ease-in-out;
   overflow: hidden; }
@@ -347,22 +347,22 @@ img {
 
 .card-icon {
   position: absolute;
-  height: 24px;
-  width: 24px;
-  top: 24px;
-  right: 24px;
+  height: 18px;
+  width: 18px;
+  top: 16px;
+  right: 16px;
   color: #3E4437; }
 
 .button-slider-left {
   position: absolute;
   z-index: 10;
-  left: 0;
+  left: 8px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
-  background-color: #D0D9BE;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(208, 217, 190, 0.5);
   cursor: pointer;
   border: none;
   border-radius: 100%; }
@@ -370,13 +370,13 @@ img {
 .button-slider-right {
   position: absolute;
   z-index: 10;
-  right: 0px;
+  right: 8px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
-  background-color: #D0D9BE;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(208, 217, 190, 0.5);
   cursor: pointer;
   border: none;
   border-radius: 100%; }
