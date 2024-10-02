@@ -1,49 +1,38 @@
-// Variables de fuente
-$font-titles: 'Raleway', sans-serif;
-$font-regular: 'Plus Jakarta Sans', sans-serif;
-
-// Variables de peso de fuente
-$font-weight-title: 600; // Semibold para Raleway
-$font-weight-italic-title-light: 300; // Semibold para Raleway
-$font-weight-italic-title-regular: 400; // Semibold para Raleway
-$font-weight-regular: 400; // Regular para Plus Jakarta Sans
-$font-weight-bold: 700; // Bold para Plus Jakarta Sans
-
 @font-face {
-  font-family: $font-titles;
+  font-family: 'Raleway';
   src: url('/assets/fonts/RalewayRegular-600.woff2');
-  font-weight: $font-weight-title;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: $font-titles;
+  font-family: 'Raleway';
   src: url('/assets/fonts/RalewayItalic-300.woff2');
-  font-weight: $font-weight-italic-title-light;
+  font-weight: 300;
   font-style: italic;
 }
 @font-face {
-  font-family: $font-titles;
+  font-family: 'Raleway';
   src: url('/assets/fonts/RalewayItalic-400.woff2');
-  font-weight: $font-weight-italic-title-regular;
+  font-weight: 400;
   font-style: italic;
 }
 @font-face {
-  font-family: $font-regular;
+  font-family: 'Plus Jakarta Sans';
   src: url('/assets/fonts/PlusJakarta-400.woff2');
-  font-weight: $font-weight-regular;
+  font-weight: 400r;
   font-style: normal;
 }
 @font-face {
-  font-family: $font-regular;
+  font-family: 'Plus Jakarta Sans';
   src: url('/assets/fonts/PlusJakarta-700.woff2');
-  font-weight: $font-weight-bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 
 .headline-bigger {
-  font-family: $font-titles;
-  font-weight: $font-weight-title;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   font-size: 72px;
   line-height: 1.1;
 
@@ -53,8 +42,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .headline-big {
-  font-family: $font-titles;
-  font-weight: $font-weight-title;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   font-size: 48px;
   line-height: 1.1;
 
@@ -63,8 +52,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
   }
 }
 .headline-big-italic {
-  font-family: $font-titles;
-  font-weight: $font-weight-italic-title-light;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   font-size: 48px;
   line-height: 1.1;
   font-style: italic;
@@ -75,8 +64,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .headline-small {
-  font-family: $font-titles;
-  font-weight: $font-weight-title;
+  font-family: 'Raleway', sans-serif;;
+  font-weight: 600;
   font-size: 19px;
   line-height: 1.1;
 
@@ -85,8 +74,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
   }
 }
 .headline-small-italic {
-  font-family: $font-titles;
-  font-weight: $font-weight-italic-title-light;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   font-size: 19px;
   line-height: 1.1;
   font-style: italic;
@@ -97,8 +86,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .headliner-smaller {
-  font-family: $font-titles;
-  font-weight: $font-weight-title;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.1;
 
@@ -108,8 +97,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .p-regular {
-  font-family: $font-regular;
-  font-weight: $font-weight-regular;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
 
@@ -119,8 +108,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .p-small {
-  font-family: $font-regular;
-  font-weight: $font-weight-regular;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
 
@@ -129,8 +118,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
   }
 }
 .p-smaller {
-  font-family: $font-regular;
-  font-weight: $font-weight-regular;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
 
@@ -140,8 +129,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .b-regular {
-  font-family: $font-regular;
-  font-weight: $font-weight-bold;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
 
@@ -151,8 +140,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .b-small {
-  font-family: $font-regular;
-  font-weight: $font-weight-bold;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.6;
 
@@ -162,8 +151,8 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
 }
 
 .b-small {
-    font-family: $font-regular;
-    font-weight: $font-weight-bold;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.6;
   

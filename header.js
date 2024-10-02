@@ -16,5 +16,4 @@ window.addEventListener('scroll', ()=> {
     }
 
     lastScroll = currentScroll
-    console.log(lastScroll)
 })

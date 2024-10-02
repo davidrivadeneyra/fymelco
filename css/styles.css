@@ -75,41 +75,44 @@ img {
 .absolute {
   position: absolute; }
 
+.relative {
+  position: relative; }
+
 .color-background-strong {
   background-color: #3B442F; }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
   src: url("/assets/fonts/RalewayRegular-600.woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
   src: url("/assets/fonts/RalewayItalic-300.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
   src: url("/assets/fonts/RalewayItalic-400.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans';
   src: url("/assets/fonts/PlusJakarta-400.woff2");
-  font-weight: 400;
+  font-weight: 400r;
   font-style: normal; }
 
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans';
   src: url("/assets/fonts/PlusJakarta-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
 .headline-bigger {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 72px;
   line-height: 1.1; }
@@ -118,7 +121,7 @@ img {
       font-size: 40px; } }
 
 .headline-big {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 1.1; }
@@ -127,7 +130,7 @@ img {
       font-size: 27px; } }
 
 .headline-big-italic {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
   line-height: 1.1;
@@ -137,7 +140,7 @@ img {
       font-size: 32px; } }
 
 .headline-small {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 19px;
   line-height: 1.1; }
@@ -146,7 +149,7 @@ img {
       font-size: 16px; } }
 
 .headline-small-italic {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
   line-height: 1.1;
@@ -156,7 +159,7 @@ img {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.1; }
@@ -165,7 +168,7 @@ img {
       font-size: 14px; } }
 
 .p-regular {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6; }
@@ -174,7 +177,7 @@ img {
       font-size: 14px; } }
 
 .p-small {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6; }
@@ -183,7 +186,7 @@ img {
       font-size: 12px; } }
 
 .p-smaller {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6; }
@@ -192,7 +195,7 @@ img {
       font-size: 10px; } }
 
 .b-regular {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6; }
@@ -201,7 +204,7 @@ img {
       font-size: 14px; } }
 
 .b-small {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.6; }
@@ -210,7 +213,7 @@ img {
       font-size: 12px; } }
 
 .b-small {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.6; }
@@ -282,8 +285,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 64px; }
+  padding-right: 32px; }
   @media (max-width: 768px) {
     .layout-container {
       padding-left: 24px;
@@ -318,6 +320,9 @@ img {
     .footer {
       padding-left: 24px;
       padding-right: 24px; } }
+
+.section-padding-bottom {
+  margin-bottom: 72px; }
 
 .slider {
   position: relative;
@@ -356,7 +361,7 @@ img {
 .button-slider-left {
   position: absolute;
   z-index: 10;
-  left: 8px;
+  left: -16px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +375,7 @@ img {
 .button-slider-right {
   position: absolute;
   z-index: 10;
-  right: 8px;
+  right: -16px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -670,7 +675,7 @@ img {
   z-index: 100; }
 
 .header__logo {
-  width: 180px; }
+  width: 128px; }
 
 .header__icon {
   color: #FFFFFF; }
@@ -751,37 +756,37 @@ img {
   text-align: center; }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
   src: url("/assets/fonts/RalewayRegular-600.woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
   src: url("/assets/fonts/RalewayItalic-300.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
   src: url("/assets/fonts/RalewayItalic-400.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans';
   src: url("/assets/fonts/PlusJakarta-400.woff2");
-  font-weight: 400;
+  font-weight: 400r;
   font-style: normal; }
 
 @font-face {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans';
   src: url("/assets/fonts/PlusJakarta-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
 .headline-bigger {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 72px;
   line-height: 1.1; }
@@ -790,7 +795,7 @@ img {
       font-size: 40px; } }
 
 .headline-big {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 1.1; }
@@ -799,7 +804,7 @@ img {
       font-size: 27px; } }
 
 .headline-big-italic {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
   line-height: 1.1;
@@ -809,7 +814,7 @@ img {
       font-size: 32px; } }
 
 .headline-small {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 19px;
   line-height: 1.1; }
@@ -818,7 +823,7 @@ img {
       font-size: 16px; } }
 
 .headline-small-italic {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
   line-height: 1.1;
@@ -828,7 +833,7 @@ img {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.1; }
@@ -837,7 +842,7 @@ img {
       font-size: 14px; } }
 
 .p-regular {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6; }
@@ -846,7 +851,7 @@ img {
       font-size: 14px; } }
 
 .p-small {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6; }
@@ -855,7 +860,7 @@ img {
       font-size: 12px; } }
 
 .p-smaller {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6; }
@@ -864,7 +869,7 @@ img {
       font-size: 10px; } }
 
 .b-regular {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6; }
@@ -873,7 +878,7 @@ img {
       font-size: 14px; } }
 
 .b-small {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.6; }
@@ -882,7 +887,7 @@ img {
       font-size: 12px; } }
 
 .b-small {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.6; }
@@ -913,8 +918,10 @@ img {
         flex: 1 1 22%;
         margin-bottom: 16px; }
         .footer__row.footer__links .footer__column .footer__label {
-          font-family: "Raleway", sans-serif;
+          font-family: 'Raleway', sans-serif;
           font-weight: 600;
+          font-size: 48px;
+          line-height: 1.1;
           font-size: 14px;
           margin-bottom: 24px;
           display: block;
@@ -939,7 +946,7 @@ img {
             padding: 8px 16px;
             border: none;
             cursor: pointer;
-            font-family: "Plus Jakarta Sans", sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 400;
             font-size: 14px;
             line-height: 1.6;
@@ -986,11 +993,11 @@ img {
   margin-bottom: 24px; }
 
 .footer-mobile-title {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #FAF7F2;
+  color: #FAF7F2 !important;
   text-transform: uppercase; }
 
 .footer-mobile-items {
@@ -1002,7 +1009,7 @@ img {
   width: 100%; }
 
 .footer-mobile-link {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -1027,6 +1034,75 @@ img {
 
 .layout-full-width-footer {
   width: 100%; }
+
+.footer-register-mobile {
+  padding: 64px 24px;
+  text-align: center; }
+
+.footer-mobile-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #2F3428;
+  font-size: 24px; }
+
+.footer-mobile-copy {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #2F3428;
+  padding-bottom: 16px; }
+
+.footer-mobile-form {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+.footer-mobile-input {
+  background-color: #FFFFFF;
+  color: #2F3428;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  width: 100%; }
+
+.footer-mobile-button {
+  background-color: #D2D8BE;
+  color: #2F3428;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase; }
+  .footer-mobile-button:hover {
+    background-color: #C7C2AC; }
+
+.footer-mobile-social {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  display: flex;
+  gap: 16px; }
+
+.footer-social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F3428;
+  border-radius: 100px;
+  padding: 4px; }
+
+.footer-social-icon {
+  height: 40px;
+  width: 40px; }
 
 .wrapper-main-banner {
   background-image: url(../assets/ghuna-banner-tiny.png);
