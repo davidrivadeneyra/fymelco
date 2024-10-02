@@ -1,3 +1,5 @@
+@import './colors';
+
 .padding-64 {
     padding-top: 64px;
   }
@@ -15,4 +17,8 @@
 
 .absolute {
     position: absolute;
+}
+
+.color-background-strong {
+  background-color: $background-strong;
 }

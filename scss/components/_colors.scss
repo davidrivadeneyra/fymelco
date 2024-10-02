@@ -7,6 +7,7 @@ $text-medium: #3E4437;
 $text-soft: #8D9089;
 $text-light: #afb1ad;
 $green-200: #C7C2AC;
+$green-100: #D2D8BE;
 $green-600: #2F3428;
 
 .background-base {
@@ -26,8 +27,9 @@ $green-600: #2F3428;
   padding-right: 48px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-radius: 999px;
+  border-radius: 16px;
   border: none;
+  color: $text-medium;
 }
 
 .text-strong {
