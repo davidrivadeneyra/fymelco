@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   function positionButtons() {
       cards.forEach(card => {
           const img = card.querySelector('.card-img-wrapper');
-          console.log(img.clientHeight)
           if (img) {
               const imgHeight = img.clientHeight; 
               const buttonOffset = (imgHeight / 2) - (leftButton.clientHeight / 2);
@@ -25,3 +24,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   window.addEventListener('resize', positionButtons);
 });
+

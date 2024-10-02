@@ -21,11 +21,11 @@ $padding-mobile: 24px;
 
 .layout-full-width {
     width: 100%;
-    padding-bottom: $padding-y;
 }
 
 .layout-container {
   @include layout-container;
+  padding-bottom: $padding-y;
 }
 
 .header {
@@ -215,12 +215,4 @@ $padding-mobile: 24px;
 
 
 
-.background-topbar {
-  display: flex;
-  padding: 16px 32px;
-  background-color: $background-strong;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
 

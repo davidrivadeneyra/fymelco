@@ -128,6 +128,16 @@ $font-weight-bold: 700; // Bold para Plus Jakarta Sans
     font-size: 12px;
   }
 }
+.p-smaller {
+  font-family: $font-regular;
+  font-weight: $font-weight-regular;
+  font-size: 12px;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
 
 .b-regular {
   font-family: $font-regular;

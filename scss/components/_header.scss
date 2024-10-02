@@ -39,7 +39,7 @@
   
         .nav__item a {
           text-decoration: none;
-          color: $white; // Usa una variable de color predefinida
+          // color: $white; 
 
         }
       }
@@ -109,7 +109,7 @@
 
       &__logo-mobile {
         display: block;
-        width: 128px;
+        width: 96px;
     }
 
       &__menu {
@@ -154,16 +154,55 @@
     }
   }
 
+  .topbar {
+    display: flex;
+    position: relative;
+    padding: 8px 32px;
+    background-color: $background-strong;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+
   .header__logo {
-    width: 200px;
+    width: 180px;
   }
 
   .header__icon {
     color: $white;
-  
+  }
+
+  .icon-green {
+    color: $green-600;
+  }
+
+  .icon-white {
+    color: $white;
   }
 
   .header-fixed {
-    z-index: 20;
     position: fixed;
+    z-index: 100;
   }
+
+  .header-transparent {
+    // z-index: 20;
+    position: fixed;
+    top: 56;
+    transition: transform 0.3s ease;
+  }
+
+  .header-white {
+    // z-index: 20;
+    position: fixed;
+    top: 56;
+    background-color: $white;
+    transition: transform 0.3s ease;
+  }
+
+  .header-hidden {
+    transform: translateY(-150%);
+  }
+ 

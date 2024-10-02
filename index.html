@@ -7,62 +7,135 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="background-base">
+    
     <header class="layout-full-width header-fixed">
-        <div class="background-topbar"> 
-            <p class="p-small uppercase text-white">Registrate y obtené un 15% de descuento en tu primera compra (no acumulable con otras promociones)</p>
+        <div class="topbar"> 
+            <p class="p-smaller uppercase text-white">Registrate y obtené un 15% de descuento en tu primera compra (no acumulable con otras promociones)</p>
         </div>
-        <div class="header">
-            <div class="header__left">
-              <img src="assets/logo.svg" alt="Logo" class="header__logo" />
-            </div>
-            <div class="header__center">
-              <nav class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item b-small uppercase"><a href="#">New in</a></li>
-                  <li class="nav__item b-small uppercase"><a href="#">Anillo</a></li>
-                  <li class="nav__item b-small uppercase"><a href="#">Pulseras</a></li>
-                  <li class="nav__item b-small uppercase"><a href="#">Colgantes</a></li>
-                  <li class="nav__item b-small uppercase"><a href="#">Caravanas</a></li>
-                  <li class="nav__item b-small uppercase"><a href="#">Ear cuff</a></li>
-                  <li class="nav__item b-small uppercase"><a href="#">Sale</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="header__right">
-                <div class="header__right">
-                    <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__menu">
-                        <use xlink:href="icons/menu.svg#menu"></use>
-                      </svg>
+        <div id="transparentHeader" class="layout-full-width header-transparent">
+            <div class="header">
+                <div class="header__left">
+                    <img src="/assets/logos/brand/ghuna-white.svg" alt="Logo" class="header__logo" />
+                  </div>
+                  <div class="header__center">
+                    <nav class="nav">
+                      <ul class="nav__list scrolleditems">
+                        <li class="nav__item b-small uppercase icon-green">
+                            <a class="icon-white" href="#">New in</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-white" href="#">Anillo</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-white" href="#">Pulseras</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-white" href="#">Colgantes</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-white" href="#">Caravanas</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-white" href="#">Ear cuff</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-white" href="#">Sale</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header__right">
+                      <div class="header__right">
+                          <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__menu">
+                              <use xlink:href="icons/menu.svg#menu"></use>
+                        </svg>
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
+                            <use xlink:href="icons/search.svg#search"></use>
+                        </svg>
+                      </div>
+              
+                      <img src="assets/logos/brand/ghuna-white.svg" alt="Logo" class="header__logo-mobile" />
+                  <div class="header__right header__right-user-bag">
                       <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
-                        <use xlink:href="icons/search.svg#search"></use>
-                      </svg>
-                </div>
-        
-                <img src="assets/logo.svg" alt="Logo" class="header__logo-mobile" />
-            <div class="header__right header__right-user-bag">
-                <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
-                    <use xlink:href="icons/user.svg#user"></use>
-                  </svg>
-                  <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__heart" >
-                    <use xlink:href="icons/heart.svg#heart"></use>
-                  </svg>
-                  <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon" >
-                    <use xlink:href="icons/bag.svg#bag"></use>
-                  </svg>
+                          <use xlink:href="icons/user.svg#user"></use>
+                        </svg>
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__heart" >
+                          <use xlink:href="icons/heart.svg#heart"></use>
+                        </svg>
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon" >
+                          <use xlink:href="icons/bag.svg#bag"></use>
+                        </svg>
+                  </div>
+                   
+                  </div>
+                  <!-- Menú Mobile -->
+                  <div class="mobile-menu" id="mobileMenu">
+                    <ul class="mobile-menu__list">
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">New in</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Anillo</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Pulseras</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Colgantes</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Caravanas</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Ear cuff</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Sale</a></li>
+                    </ul>
+                  </div>
             </div>
-             
-            </div>
-            <!-- Menú Mobile -->
-            <div class="mobile-menu" id="mobileMenu">
-              <ul class="mobile-menu__list">
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">New in</a></li>
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Anillo</a></li>
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Pulseras</a></li>
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Colgantes</a></li>
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Caravanas</a></li>
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Ear cuff</a></li>
-                <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Sale</a></li>
-              </ul>
+        </div>         
+        <div id="whiteHeader" class="layout-full-width header-white header-hidden">
+            <div class="header">
+                <div class="header__left">
+                    <img src="assets/logos/brand/ghuna-green.svg" alt="Logo" class="header__logo" />
+                  </div>
+                  <div class="header__center">
+                    <nav class="nav">
+                      <ul class="nav__list scrolleditems">
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">New in</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">Anillo</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">Pulseras</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">Colgantes</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">Caravanas</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">Ear cuff</a></li>
+                        <li class="nav__item b-small uppercase">
+                            <a class="icon-green" href="#">Sale</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header__right">
+                      <div class="header__right">
+                            <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green header__menu">
+                              <use xlink:href="icons/menu.svg#menu"></use>
+                            </svg>
+                            <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green">
+                              <use xlink:href="icons/search.svg#search"></use>
+                            </svg>
+                      </div>
+              
+                      <img src="assets/logos/brand/ghuna-green.svg" alt="Logo" class="header__logo-mobile" />
+                  <div class="header__right header__right-user-bag">
+                      <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green">
+                          <use xlink:href="icons/user.svg#user"></use>
+                        </svg>
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green header__heart" >
+                          <use xlink:href="icons/heart.svg#heart"></use>
+                        </svg>
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green" >
+                          <use xlink:href="icons/bag.svg#bag"></use>
+                        </svg>
+                  </div>
+                   
+                  </div>
+                  <!-- Menú Mobile -->
+                  <div class="mobile-menu" id="mobileMenu">
+                    <ul class="mobile-menu__list">
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">New in</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Anillo</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Pulseras</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Colgantes</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Caravanas</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Ear cuff</a></li>
+                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Sale</a></li>
+                    </ul>
+                  </div>
             </div>
         </div>         
     </header>
@@ -434,6 +507,7 @@
        
       </footer>
 <script src="script.js"></script>
+<script src="header.js"></script>
     
 </body>
 
