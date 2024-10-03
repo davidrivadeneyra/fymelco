@@ -1146,6 +1146,9 @@ img {
   background-image: url(../assets/ghuna-banner-tiny.png);
   background-repeat: no-repeat;
   background-position: center; }
+  @media (max-width: 768px) {
+    .wrapper-main-banner {
+      background-size: cover; } }
 
 .main-banner {
   height: 90vh;
@@ -1156,3 +1159,6 @@ img {
   justify-content: center;
   align-content: center;
   flex-direction: column; }
+  @media (max-width: 768px) {
+    .main-banner {
+      height: 40vh; } }
