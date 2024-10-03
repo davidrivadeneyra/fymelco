@@ -118,7 +118,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-bigger {
-      font-size: 40px; } }
+      font-size: 32px; } }
 
 .headline-big {
   font-family: 'Raleway', sans-serif;
@@ -127,7 +127,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-big {
-      font-size: 27px; } }
+      font-size: 24px; } }
 
 .headline-big-italic {
   font-family: 'Raleway', sans-serif;
@@ -137,7 +137,7 @@ img {
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-big-italic {
-      font-size: 32px; } }
+      font-size: 24px; } }
 
 .headline-small {
   font-family: 'Raleway', sans-serif;
@@ -826,7 +826,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-bigger {
-      font-size: 40px; } }
+      font-size: 32px; } }
 
 .headline-big {
   font-family: 'Raleway', sans-serif;
@@ -835,7 +835,7 @@ img {
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headline-big {
-      font-size: 27px; } }
+      font-size: 24px; } }
 
 .headline-big-italic {
   font-family: 'Raleway', sans-serif;
@@ -845,7 +845,7 @@ img {
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-big-italic {
-      font-size: 32px; } }
+      font-size: 24px; } }
 
 .headline-small {
   font-family: 'Raleway', sans-serif;
@@ -1161,4 +1161,4 @@ img {
   flex-direction: column; }
   @media (max-width: 768px) {
     .main-banner {
-      height: 40vh; } }
+      height: 60vh; } }
