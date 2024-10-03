@@ -402,11 +402,13 @@ img {
   gap: 32px;
   padding-top: 48px;
   padding-bottom: 48px;
-  max-width: 100%; }
+  max-width: 860px;
+  margin: 0 auto; }
 
-@media (max-width: 728px) {
+@media (max-width: 1280px) {
   .card-big-section {
-    flex-direction: column; } }
+    flex-direction: column;
+    max-width: 500px; } }
 
 .card-big {
   width: 100%;
@@ -488,27 +490,45 @@ img {
 
 .minicard-1 {
   top: 48px;
-  left: 0; }
+  left: -400px; }
+  @media (max-width: 728px) {
+    .minicard-1 {
+      left: 0px; } }
 
 .minicard-2 {
   top: 48px;
-  left: 0; }
+  left: -270px; }
+  @media (max-width: 728px) {
+    .minicard-2 {
+      left: 0px; } }
 
 .minicard-3 {
   top: 48px;
-  left: 0; }
+  left: -230px; }
+  @media (max-width: 728px) {
+    .minicard-3 {
+      left: 0px; } }
 
 .minicard-4 {
   top: 48px;
-  left: 0; }
+  left: 220px; }
+  @media (max-width: 728px) {
+    .minicard-4 {
+      left: 0px; } }
 
 .minicard-5 {
   top: 48px;
-  left: 0; }
+  left: 240px; }
+  @media (max-width: 728px) {
+    .minicard-5 {
+      left: 0px; } }
 
 .minicard-6 {
   top: 48px;
-  left: 0; }
+  left: 290px; }
+  @media (max-width: 728px) {
+    .minicard-6 {
+      left: 0px; } }
 
 .background-base {
   background-color: #FAF7F2;
