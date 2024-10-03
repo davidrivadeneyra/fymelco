@@ -430,10 +430,13 @@ img {
   padding: 16px;
   gap: 16px;
   border-radius: 8px;
-  display: none;
+  display: flex;
   position: absolute;
   text-align: left;
-  white-space: nowrap; }
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  transition: 0.3s ease; }
 
 .card-big-button-circular {
   height: 40px;
@@ -445,28 +448,28 @@ img {
   cursor: pointer; }
 
 .button-minicard-1 {
-  top: 45%;
-  left: 64%; }
+  top: 40%;
+  left: 56%; }
 
 .button-minicard-2 {
-  top: 24%;
-  left: 32%; }
+  top: 12%;
+  left: 24%; }
 
 .button-minicard-3 {
   top: 64%;
   left: 16%; }
 
 .button-minicard-4 {
-  top: 32%;
-  left: 56%; }
+  top: 5%;
+  left: 40%; }
 
 .button-minicard-5 {
-  top: 72%;
+  top: 70%;
   left: 32%; }
 
 .button-minicard-6 {
-  top: 48%;
-  left: 24%; }
+  top: 38%;
+  left: 19%; }
 
 .card-big-mini-card-img {
   object-fit: cover;
@@ -474,29 +477,34 @@ img {
   height: 48px;
   border-radius: 4px; }
 
+.minicard-shadow {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+  transform: scale(1.05); }
+
 .minicard-1 {
   top: 48px;
-  left: 24px; }
+  left: 0; }
 
 .minicard-2 {
   top: 48px;
-  left: 24px; }
+  left: 0; }
 
 .minicard-3 {
   top: 48px;
-  left: 24px; }
+  left: 0; }
 
 .minicard-4 {
   top: 48px;
-  left: 24px; }
+  left: 0; }
 
 .minicard-5 {
   top: 48px;
-  left: 24; }
+  left: 0; }
 
 .minicard-6 {
   top: 48px;
-  left: 24px; }
+  left: 0; }
 
 .background-base {
   background-color: #FAF7F2;

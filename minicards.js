@@ -4,10 +4,10 @@ document.querySelectorAll('.card-big-button-circular ').forEach(button => {
       const targetElement = document.querySelector(`.${targetClass}`);
       console.log(targetClass)
   
-      if (targetElement.style.display === 'none' || targetElement.style.display === '') {
-        targetElement.style.display = 'flex';
+      if (targetElement.classList.contains('minicard-shadow')) {
+        targetElement.classList.remove('minicard-shadow');
       } else {
-        targetElement.style.display = 'none';
+        targetElement.classList.add('minicard-shadow');
       }
     });
   });
