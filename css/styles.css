@@ -437,6 +437,9 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   transition: 0.3s ease; }
+  @media (max-width: 768px) {
+    .card-big-mini-card {
+      display: none; } }
 
 .card-big-button-circular {
   height: 40px;
@@ -478,6 +481,7 @@ img {
   border-radius: 4px; }
 
 .minicard-shadow {
+  display: flex;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
   transform: scale(1.05); }

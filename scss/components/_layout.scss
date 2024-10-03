@@ -181,6 +181,10 @@ $padding-mobile: 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
   transition: 0.3s ease; 
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .card-big-button-circular {
@@ -226,10 +230,13 @@ $padding-mobile: 24px;
 }
 
 .minicard-shadow {
+  display: flex;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.30); 
   transition: 0.3s ease; 
-  transform: scale(1.05)
+  transform: scale(1.05)  
+
 }
+
 
 .minicard-1 {
   top: 48px;
