@@ -1313,7 +1313,7 @@ img {
 .card-smaller-divider {
   display: block;
   width: 1px;
-  background-color: #FFFFFF;
+  background-color: #E9EBEC;
   height: auto;
   align-self: stretch;
   flex-shrink: 0; }
@@ -1414,6 +1414,10 @@ img {
   right: -64px;
   bottom: 4px;
   z-index: 1; }
+  @media (max-width: 768px) {
+    .bento-img {
+      width: 400px;
+      right: -16px; } }
 
 .bento-text-small {
   position: relative;
@@ -1427,6 +1431,10 @@ img {
   right: 16px;
   bottom: 4px;
   z-index: 1; }
+  @media (max-width: 768px) {
+    .bento-img-ipad {
+      width: 256px;
+      right: 32px; } }
 
 .bento-img-watch {
   position: absolute;
@@ -1434,6 +1442,10 @@ img {
   right: -56px;
   bottom: -16px;
   z-index: 1; }
+  @media (max-width: 768px) {
+    .bento-img-watch {
+      width: 450px;
+      right: -24px; } }
 
 .bento-img-airpods {
   position: absolute;
@@ -1441,6 +1453,10 @@ img {
   right: -172px;
   bottom: -16px;
   z-index: 1; }
+  @media (max-width: 768px) {
+    .bento-img-airpods {
+      width: 600px;
+      right: -128px; } }
 
 .background-base {
   background-color: #F5F5F5;
@@ -1693,12 +1709,14 @@ img {
   left: 19%; }
 
 .wrapper-main-banner {
-  background-image: url(../assets/ghuna-banner-tiny.webp);
+  background-image: url(../assets/utex-banner.jpg);
+  width: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
   @media (max-width: 768px) {
     .wrapper-main-banner {
-      background-size: cover; } }
+      background-size: contain; } }
 
 .main-banner {
   height: 90vh;

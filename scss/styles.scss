@@ -10,11 +10,14 @@
 
 
 .wrapper-main-banner {
-    background-image: url(../assets/ghuna-banner-tiny.webp);
+    background-image: url(../assets/utex-banner.jpg);
+    width: 100%;
+    // height: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     @media (max-width: 768px) {
-        background-size: cover;
+        background-size: contain;
       }
 }
 

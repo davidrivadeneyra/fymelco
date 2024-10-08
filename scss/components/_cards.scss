@@ -216,7 +216,7 @@
 .card-smaller-divider {
     display: block;
     width: 1px;
-    background-color: $dark-050; 
+    background-color: $dark-300; 
     height: auto; 
     align-self: stretch; 
     flex-shrink: 0;
@@ -335,6 +335,11 @@
     right: -64px;
     bottom: 4px;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        width: 400px;
+        right: -16px;
+      }
   }
 
   .bento-text-small {
@@ -350,6 +355,11 @@
     right: 16px;
     bottom: 4px;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        width: 256px;
+        right: 32px;
+      }
   }
 
   .bento-img-watch {
@@ -358,11 +368,22 @@
     right: -56px;
     bottom: -16px;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        width: 450px;
+        right: -24px;
+      }
   }
+
   .bento-img-airpods {
     position: absolute;
     width: 672px;
     right: -172px;
     bottom: -16px;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        width: 600px;
+        right: -128px;
+      }
   }
