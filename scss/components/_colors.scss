@@ -1,26 +1,22 @@
-$background-base: #FAF7F2;
-$background-strong: #3B442F;
-$white :#FFFFFF;
-$button-color: #D0D9BE;
-$text-strong: #2F3428;
-$text-medium: #3E4437;
-$text-soft: #8D9089;
-$text-light: #afb1ad;
-$green-200: #C7C2AC;
-$green-100: #D2D8BE;
-$green-600: #2F3428;
+$dark-900: #010101;
+$dark-800: #1C1F22;
+$dark-700: #585D62;
+$dark-400:#BEC2C5;
+$dark-200: #F5F5F5;
+$dark-100: #F7F7F7;
+$dark-050: #FFFFFF;
 
 .background-base {
-  background-color: $background-base;
+  background-color: $dark-200;
   position: relative;
 }
 
 .background-strong {
-  background-color: $background-strong;
+  background-color: $dark-050;
 }
 
 .button {
-  background-color: $button-color;
+  background-color: $dark-700;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -29,27 +25,27 @@ $green-600: #2F3428;
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: $text-medium;
+  color: $dark-700;
 }
 
 .text-strong {
-  color: $text-strong;
+  color: $dark-700;
 }
 
 .text-medium {
-  color: $text-medium;
+  color: $dark-700;
 }
 
 .text-soft {
-  color: $text-soft;
+  color: $dark-400;
 }
 
 .text-green-600 {
-  color: $green-600;
+  color: $dark-800;
 }
 
 .text-white {
-  color: $white;
+  color: $dark-050;
 }
 
 .divider-section {
@@ -65,7 +61,7 @@ $green-600: #2F3428;
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $text-light;
+  border-top: 1px solid $dark-100;
 }
 
 .divider-text {

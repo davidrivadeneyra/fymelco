@@ -17,12 +17,16 @@
 
 .absolute {
     position: absolute;
-}
+  }
 
 .relative {
-  position: relative;
-}
+    position: relative;
+  }
 
 .color-background-strong {
-  background-color: $background-strong;
+    background-color: $dark-050;
+  }
+
+.none {
+  display: none;
 }

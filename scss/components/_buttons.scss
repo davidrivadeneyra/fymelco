@@ -1,0 +1,67 @@
+@import "./colors";
+@import "./fonts";
+
+
+.button-slider-left {
+    position: absolute;
+    z-index: 10;
+    left: -16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px; 
+    height: 32px;
+    background-color: $dark-400;
+    cursor: pointer; 
+    border: none;
+    border-radius: 100%;
+  }
+  
+  .button-slider-right {
+    position: absolute;
+    z-index: 10;
+    right: -16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px; 
+    height: 32px;
+    background-color: $dark-400;
+    cursor: pointer; 
+    border: none;
+    border-radius: 100%;
+  }
+  
+  .button-slider-icon {
+    color: $dark-700;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .button-minicard-1 {
+    top: 40%;
+    left: 56%;
+  }
+  .button-minicard-2 {
+    top: 12%;
+    left: 24%;
+  }
+  .button-minicard-3 {
+    top: 64%;
+    left: 16%;
+  }
+  .button-minicard-4 {
+    top: 5%;
+    left: 40%;
+  }
+  .button-minicard-5 {
+    top: 70%;
+    left: 32%;
+  }
+  .button-minicard-6 {
+    top: 38%;
+    left: 19%;
+  }
+  
+  
+  

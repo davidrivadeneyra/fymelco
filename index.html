@@ -6,76 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="background-base">
-    
+<body class="$dark-200">
+
+    <!-- Header -->
     <header class="layout-full-width header-fixed">
         <div class="topbar"> 
             <p class="p-smaller uppercase text-white">Registrate y obtené un 15% de descuento en tu primera compra (no acumulable con otras promociones)</p>
-        </div>
-        <div id="transparentHeader" class="layout-full-width header-transparent">
-            <div class="header">
-                <div class="header__left">
-                    <img src="/assets/logos/brand/ghuna-white.svg" alt="Logo" class="header__logo" />
-                  </div>
-                  <div class="header__center">
-                    <nav class="nav">
-                      <ul class="nav__list scrolleditems">
-                        <li class="nav__item b-small uppercase icon-green">
-                            <a class="icon-white" href="#">New in</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-white" href="#">Anillo</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-white" href="#">Pulseras</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-white" href="#">Colgantes</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-white" href="#">Caravanas</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-white" href="#">Ear cuff</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-white" href="#">Sale</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                  <div class="header__right">
-                      <div class="header__right">
-                          <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__menu">
-                              <use xlink:href="icons/menu.svg#menu"></use>
-                        </svg>
-                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
-                            <use xlink:href="icons/search.svg#search"></use>
-                        </svg>
-                      </div>
-              
-                      <img src="assets/logos/brand/ghuna-white.svg" alt="Logo" class="header__logo-mobile" />
-                  <div class="header__right header__right-user-bag">
-                      <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon">
-                          <use xlink:href="icons/user.svg#user"></use>
-                        </svg>
-                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon header__heart" >
-                          <use xlink:href="icons/heart.svg#heart"></use>
-                        </svg>
-                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon" >
-                          <use xlink:href="icons/bag.svg#bag"></use>
-                        </svg>
-                  </div>
-                   
-                  </div>
-                  <!-- Menú Mobile -->
-                  <div class="mobile-menu" id="mobileMenu">
-                    <ul class="mobile-menu__list">
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">New in</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Anillo</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Pulseras</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Colgantes</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Caravanas</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Ear cuff</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase"><a href="#">Sale</a></li>
-                    </ul>
-                  </div>
-            </div>
-        </div>         
-        <div id="whiteHeader" class="layout-full-width header-white header-hidden">
+        </div>   
+        <div id="whiteHeader" class="layout-full-width header-white">
             <div class="header">
                 <div class="header__left">
                     <img src="assets/logos/brand/ghuna-green.svg" alt="Logo" class="header__logo" />
@@ -140,17 +78,115 @@
         </div>         
     </header>
 
+    <!-- Banner -->
     <section class="layout-full-width wrapper-main-banner section-padding-bottom">
         <div class="layout-container main-banner">
-            <div class="">
+            <div class="none">
                 <h1 class="headline-bigger">TEMPORADA DE COLGANTES</h1>
                 <h2 class="headline-big-italic">Nuevos arribos, nueva colección</h2>
+                <button class="p-regular button uppercase">Ver más</button>
             </div>
-            
-            <button class="p-regular button uppercase">Ver más</button>
         </div>  
     </section>
 
+     <!-- Detalles de ventas y envío -->
+    <section class="layout-full-width padding-64 section-padding-bottom">
+        <div class="layout-container hidden">
+            <div class="relative">
+                <div class="card-smaller-section">  
+                    <div class="card-smaller relative">
+                        <svg viewBox="0 0 100 100" alt="Credit Card" class="card-smaller-icon">
+                            <use xlink:href="icons/creditcard.svg#creditcard"></use>
+                          </svg>
+                        <div class="card-smaller-text">
+                            <p class="p-smaller text-medium">Compra online</p>
+                            <p class="p-small text-medium">Hasta 12 cuotas sin recargo con OCA</p>
+                            <p class="p-small text-medium">Hasta 10 cuotas sin recargo con VISA</p>
+                            <p class="p-small text-medium">Hasta 6 cuotas sin recargo con Master</p>
+                        </div>
+                    </div>
+                    <span class="card-smaller-divider"></span>
+                    <div class="card-smaller relative">
+                        <svg viewBox="0 0 100 100" alt="Truck" class="card-smaller-icon">
+                            <use xlink:href="icons/truck.svg#truck"></use>
+                          </svg>
+                        <div class="card-smaller-text">
+                            <p class="p-smaller text-medium">Compra online</p>
+                            <p class="p-small text-medium">Envíos a todo Uruguay</p>
+                        </div>
+                    </div>
+                    <span class="card-smaller-divider"></span>
+                    <div class="card-smaller relative">
+                        <svg viewBox="0 0 100 100" alt="Shield" class="card-smaller-icon">
+                            <use xlink:href="icons/shieldcheck.svg#shield"></use>
+                          </svg>
+                        <div class="card-smaller-text">
+                            <p class="p-smaller text-medium">Compra Seguro</p>
+                            <p class="p-small text-medium">Productos con garatía oficial</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categorías -->
+    <section class="layout-full-width padding-64 section-padding-bottom">
+        <div class="layout-container hidden">
+            <div class="relative">
+                <div class="card-categories-section">
+                    <div class="card-categorie relative">
+                        <div class="card-categorie-img-wrapper">
+                            <img class="card-categorie-image" src="./assets/categories/iphone.png" alt="Sortijas Ghuna">
+                        </div>
+                            <p class="b-regular text-medium">iPhone</p>
+                    </div>
+                    <div class="card-categorie relative">
+                        <div class="card-categorie-img-wrapper">
+                            <img class="card-categorie-image" src="./assets/categories/samsung.png" alt="Sortijas Ghuna">
+                        </div>
+                            <p class="b-regular text-medium">Samsung</p>
+                    </div>
+                    <div class="card-categorie relative">
+                        <div class="card-categorie-img-wrapper">
+                            <img class="card-categorie-image" src="./assets/categories/ipad.png" alt="Sortijas Ghuna">
+                        </div>
+                            <p class="b-regular text-medium">iPad</p>
+                    </div>
+                    <div class="card-categorie relative">
+                        <div class="card-categorie-img-wrapper">
+                            <img class="card-categorie-image" src="./assets/categories/mac.png" alt="Sortijas Ghuna">
+                        </div>
+                            <p class="b-regular text-medium">MacBook</p>
+                    </div>
+                    <div class="card-categorie relative">
+                        <div class="card-categorie-img-wrapper">
+                            <img class="card-categorie-image" src="./assets/categories/airpods.png" alt="Sortijas Ghuna">
+                        </div>
+                            <p class="b-regular text-medium">AirPods</p>
+                    </div>
+                    <div class="card-categorie relative">
+                        <div class="card-categorie-img-wrapper">
+                            <img class="card-categorie-image" src="./assets/categories/applewatch.png" alt="Sortijas Ghuna">
+                        </div>
+                            <p class="b-regular text-medium">AppleWatch</p>
+                    </div>
+                    
+
+                   
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+    
+    <!-- Card section    -->
+    </section>
+
+    <!-- Products -->
     <section class="layout-full-width padding-64 section-padding-bottom">
         <div class="layout-container hidden">
             <div class="relative">
@@ -168,58 +204,71 @@
                     
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/card-01.png" alt="Sortijas Ghuna">
+                            <img class="card-img" src="./assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
                            <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
+                            <p class="b-regular text-medium">$990</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card relative">
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="/assets/products/mac-02.jpeg" alt="Sortijas Ghuna">
+                           <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                             <p class="b-regular text-medium">$990</p>
                         </div>
                         
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper"> 
-                            <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
+                            <img class="card-img" src="/assets/products/mac-03.jpg" alt="Sortijas Ghuna">
                            <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                        <p class="p-regular text-medium">Colgante Sol</p>
+                        <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                         <p class="b-regular text-medium">$990</p></div>
                        
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/card-03.png" alt="Sortijas Ghuna">
+                            <img class="card-img" src="/assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
                            <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                             <p class="b-regular text-medium">$990</p>
                         </div>
                         
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/card-04.png" alt="Sortijas Ghuna">
+                            <img class="card-img" src="/assets/products/mac-04.jpg" alt="Sortijas Ghuna">
                            <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                             <p class="b-regular text-medium">$990</p>
                         </div>
               
                     </div>
                    
                 </div>
-
+    
             </div>
             
             
@@ -227,182 +276,118 @@
        
     </section>
 
-    <section class="layout-full-width">
-        <div class="layout-container">
-            <div class="divider-section">
-                <hr class="divider-line">
-                <div class="divider-text">
-                    <h3 class="text-soft headline-small-italic">Combinaciones</h3>
-                    <h2 class="text-medium headline-big uppercase">Ideales</h2>
-                </div>
-                <hr class="divider-line">
-            </div> 
-        </div>
-        
-        <!-- MEGA CARDS -->
-        <div class="layout-container  section-padding-bottom">
-            <div class="card-big-section">
-                <div class="card-big">
-                    <div class="card-big-items">
-                        <button data-target="minicard-1" class="card-big-button-circular button-minicard-1">
-                            <div class="card-big-mini-card minicard-1">
-                                <img class="card-big-mini-card-img" src="./assets/card-02.png">
-                                <div>
-                                    <p class="p-small text-green-600 ">Anillo protector</p>
-                                    <p class="b-regular text-white">$990</p>
-                                </div>
-                            </div>
-                        </button>
-                        <button data-target="minicard-2" class="card-big-button-circular button-minicard-2">
-                            <div class="card-big-mini-card minicard-2">
-                                <img class="card-big-mini-card-img" src="./assets/card-02.png">
-                                <div>
-                                    <p class="p-small text-green-600 ">Anillo protector</p>
-                                    <p class="b-regular text-white">$990</p>
-                                </div>
-                            </div>
-                        </button>
-                        <button data-target="minicard-3" class="card-big-button-circular button-minicard-3">
-                            <div class="card-big-mini-card minicard-3">
-                                <img class="card-big-mini-card-img" src="./assets/card-02.png">
-                                <div>
-                                    <p class="p-small text-green-600 ">Anillo protector</p>
-                                    <p class="b-regular text-white">$990</p>
-                                </div>
-                            </div>
-                        </button>
-                        
-                       
-                       
-                    </div>
-                    <img class="card-big-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
-                </div>
-                <div class="card-big">
-                    <div class="card-big-items">
-                        <button data-target="minicard-4" class="card-big-button-circular button-minicard-4">
-                            <div class="card-big-mini-card minicard-4">
-                                <img class="card-big-mini-card-img" src="./assets/card-02.png">
-                                <div>
-                                    <p class="p-small text-green-600 ">Anillo protector</p>
-                                    <p class="b-regular text-white">$990</p>
-                                </div>
-                            </div>
-                        </button>
-                        <button data-target="minicard-5" class="card-big-button-circular button-minicard-5">
-                            <div class="card-big-mini-card minicard-5">
-                                <img class="card-big-mini-card-img" src="./assets/card-02.png">
-                                <div>
-                                    <p class="p-small text-green-600 ">Anillo protector</p>
-                                    <p class="b-regular text-white">$990</p>
-                                </div>
-                            </div>
-                        </button>
-                        <button data-target="minicard-6" class="card-big-button-circular button-minicard-6">
-                            <div class="card-big-mini-card minicard-6">
-                                <img class="card-big-mini-card-img" src="./assets/card-02.png">
-                                <div>
-                                    <p class="p-small text-green-600 ">Anillo protector</p>
-                                    <p class="b-regular text-white">$990</p>
-                                </div>
-                            </div>
-                        </button>
-                        
-                       
-                       
-                    </div>
-                    <img class="card-big-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
-                </div>
-             
-                
-            </div>
-           
-        </div>
-       
-    </section>
-    <section class="layout-full-width  section-padding-bottom">
-        <div class="layout-container">
-            
-            <div class="divider-section padding-b-48 ">
-                <hr class="divider-line">
-                <div class="divider-text">
-                    <h3 class="text-soft headline-small-italic">Brilla por menos</h3>
-                    <h2 class="text-medium headline-big uppercase">Hasta 60% off</h2>
-                </div>
-                <hr class="divider-line">
-            </div> 
-        </div>
-        
-        <div class="layout-container">
+    <!-- Bento -->
+    <section class="layout-full-width padding-64 section-padding-bottom">
+        <div class="layout-container hidden">
             <div class="relative">
-                <button class="button-slider-left control-button-left">
+
+                <div class="bento-section">
+                    <div class="bento-card relative">
+                        <div class="bento-text">
+                            <h3 class="headline-small text-medium">iPhone</h3>
+                            <p class="p-regular text-medium">Potencia y elegancia en solo dispositivo</p>
+                        </div>
+                        <div class="bento-img-wrapper">
+                            <img class="bento-img" src="./assets/bento/iphones.png" alt="Sortijas Ghuna">          
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- Products -->
+    <section class="layout-full-width padding-64 section-padding-bottom">
+        <div class="layout-container hidden">
+            <div class="relative">
+                <button class="button-slider-left">
                     <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
                         <use xlink:href="icons/caret-left.svg#caret-left"></use>
                     </svg>
                 </button>
-                <button class="button-slider-right control-button-right">
+                <button class="button-slider-right">
                     <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
                         <use xlink:href="icons/caret-right.svg#caret-right"></use>
                     </svg>
                 </button>
                 <div class="slider">
                     
-    
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/card-01.png" alt="Sortijas Ghuna">
-                           <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                            <img class="card-img" src="./assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
-        
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                             <p class="b-regular text-medium">$990</p>
                         </div>
+                        
+                    </div>
+                    <div class="card relative">
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="/assets/products/mac-02.jpeg" alt="Sortijas Ghuna">
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
+                            <p class="b-regular text-medium">$990</p>
+                        </div>
+                        
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper"> 
-                            <img class="card-img" src="./assets/card-02.png" alt="Sortijas Ghuna">
-                           <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                            <img class="card-img" src="/assets/products/mac-03.jpg" alt="Sortijas Ghuna">
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
-                            <p class="b-regular text-medium">$990</p>
-                        </div>
+                        <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
+                        <p class="b-regular text-medium">$990</p></div>
+                    
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/card-03.png" alt="Sortijas Ghuna">
-                           <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                            <img class="card-img" src="/assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                             <p class="b-regular text-medium">$990</p>
                         </div>
+                        
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/card-04.png" alt="Sortijas Ghuna">
-                           <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                <use xlink:href="icons/heart.svg#heart"></use>
-              </svg>
+                            <img class="card-img" src="/assets/products/mac-04.jpg" alt="Sortijas Ghuna">
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
+                                <use xlink:href="icons/heart.svg#heart"></use>
+                            </svg>
                         </div>
                         <div class="card-text">
-                            <p class="p-regular text-medium">Colgante Sol</p>
+                            <p class="p-small text-medium">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
                             <p class="b-regular text-medium">$990</p>
                         </div>
+            
                     </div>
+                
                 </div>
 
             </div>
             
+            
         </div>
-       
+    
     </section>
+
     <section class="layout-full-width-footer ">
         <div class="footer-register-mobile">
             <label class="footer-mobile-headline ">Registrate y obtené un 15% of</label>
@@ -523,7 +508,7 @@
         
           <!-- Fila 3 -->
           <div class="footer__row footer__bottom">
-            <div class="footer__copyright p-small">© Copyright 2024 / Ghuna</div>
+            <div class="footer__copyright p-small">© Copyright 2024 / UTEX</div>
             <div class="footer__logo-container">
               <img src="assets/logos/brand/adquiria.svg" alt="Company Logo" class="footer__company-logo" />
             </div>
@@ -533,7 +518,6 @@
        
       </footer>
 <script src="script.js"></script>
-<script src="header.js"></script>
 <script src="minicards.js"></script>
     
 </body>

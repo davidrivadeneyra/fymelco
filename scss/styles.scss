@@ -5,10 +5,12 @@
 @import './components/colors';
 @import './components/header';
 @import './components/footer';
+@import './components/cards';
+@import './components/buttons';
 
 
 .wrapper-main-banner {
-    background-image: url(../assets/ghuna-banner-tiny.png);
+    background-image: url(../assets/ghuna-banner-tiny.webp);
     background-repeat: no-repeat;
     background-position: center;
     @media (max-width: 768px) {

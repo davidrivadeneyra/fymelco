@@ -6,8 +6,8 @@
     
     margin: 0 auto;
     padding: 64px 32px;
-    background-color: $background-strong;
-    color: $text-soft;
+    background-color: $dark-900;
+    color: $dark-400;
   
     &__row {
       display: flex;
@@ -30,19 +30,19 @@
             font-size: 14px;
             margin-bottom: 24px;
             display: block;
-            color: $background-base;
+            color: $dark-050;
             text-transform: uppercase;
           }
   
           .footer__link {
             display: block;
             margin-bottom: 8px;
-            color: $text-light;
+            color: $dark-100;
             text-decoration: none;
   
-            &:hover {
-              color: lighten($text-light, 10%);
-            }
+            // &:hover {
+            //   color: lighten($dark-100, 10%);
+            // }
           }
   
           .footer__newsletter {
@@ -55,8 +55,8 @@
             }
   
             .footer__button {
-              background-color: $green-100;
-              color: $text-strong;
+              background-color: $dark-100;
+              color: $dark-700;
               padding: 8px 16px;
               border: none;
               cursor: pointer;
@@ -67,7 +67,7 @@
               text-transform: uppercase;
   
               &:hover {
-                background-color: $green-200;
+                background-color: $dark-100;
               }
             }
           }
@@ -102,7 +102,7 @@
   
         .footer__copyright {
           font-size: 14px;
-          color: $text-light;
+          color: $dark-100;
         }
   
         .footer__company-logo {
@@ -120,6 +120,7 @@
   }
 
  .footer-mobile {
+    background-color: $dark-900;
     display: block;
     padding: 64px 24px;
  }
@@ -136,7 +137,7 @@
     font-weight: 600;
     font-size: 14px;
     display: block;
-    color: $background-base;
+    color: $dark-050;
     text-transform: uppercase;
 }
 
@@ -144,8 +145,8 @@
     display: flex;
     flex-direction: column;
     padding: 16px 0;
-    border-top: 1px solid $text-soft;
-    border-bottom: 1px solid $text-soft;
+    border-top: 1px solid $dark-400;
+    border-bottom: 1px solid $dark-400;
     width: 100%;
 }
 
@@ -154,12 +155,12 @@
   font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: $text-light;
+    color: $dark-100;
     text-decoration: none;
 
-    &:hover {
-        color: lighten($text-light, 10%);
-    }
+    // &:hover {
+    //     color: lighten($dark-100, 10%);
+    // }
 }
 
  @media (min-width: 1281px) {
@@ -199,7 +200,7 @@
 .footer-mobile-headline {
   font-family: 'Raleway', sans-serif;
       font-weight: 600;
-      color: $green-600;
+      color: $dark-800;
       font-size: 24px;
 }
 .footer-mobile-copy {
@@ -207,7 +208,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 1.6;
-  color: $text-strong;
+  color: $dark-700;
   padding-bottom: 16px;
 
 }
@@ -218,8 +219,8 @@
 
 }
 .footer-mobile-input {
-  background-color: $white;
-  color: $text-strong;
+  background-color: $dark-050;
+  color: $dark-700;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
@@ -232,8 +233,8 @@
 
 }
 .footer-mobile-button {
-  background-color: $green-100;
-  color: $text-strong;
+  background-color: $dark-100;
+  color: $dark-700;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
@@ -244,7 +245,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: $green-200;
+    background-color: $dark-100;
   }
 
 }
@@ -261,7 +262,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $green-600;
+  background-color: $dark-800;
   border-radius: 100px;
   padding: 4px;
 }
