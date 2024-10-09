@@ -161,6 +161,17 @@
     }
 }
 
+.b-smaller {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.6;
+  
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+}
+
 .italic {
   font-style: italic;
 }
