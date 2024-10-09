@@ -1179,7 +1179,7 @@ img {
 
 @media (max-width: 768px) {
   .card {
-    flex: 0 0 calc((100% - 1 * 32px) / 2); } }
+    flex: 0 0 calc((100% - 1 * 16px) / 2); } }
 
 .card-text {
   padding: 0 24px 24px; }
