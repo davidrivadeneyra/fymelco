@@ -56,7 +56,7 @@
               
                       <img src="assets/logos/brand/ghuna-green.svg" alt="Logo" class="header__logo-mobile" />
                   <div class="header__right header__right-user-bag">
-                      <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green">
+                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green">
                           <use xlink:href="icons/user.svg#user"></use>
                         </svg>
                         <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green header__heart" >
@@ -88,257 +88,136 @@
     </header>
 
     <!-- Banner -->
-    <section class="layout-full-width wrapper-main-banner">
-        <div class="layout-container main-banner">
-            <div class="none">
-                <h1 class="headline-bigger">TEMPORADA DE COLGANTES</h1>
-                <h2 class="headline-big-italic">Nuevos arribos, nueva colección</h2>
-                <button class="p-regular button uppercase">Ver más</button>
+    <section class="layout-full-width">
+        <div class="layout-container wrapper-products-banner">
+            <div class="product-container">
+                <div class="product-images">
+                    <ul class="product-thumbnails-list">
+                        <li class="product-thumbnails-item">
+                            <img src="/assets/products/mac-01.jpg" class="product-img-thumbnail selected" alt="Nombre del producto" onclick="selectImage('/assets/products/mac-01.jpg')">
+                        </li>
+                        <li class="product-thumbnails-item">
+                            <img src="/assets/products/mac-02.jpg" class="product-img-thumbnail" alt="Nombre del producto" onclick="selectImage('/assets/products/mac-02.jpg')">
+                        </li>   
+                        <li class="product-thumbnails-item">
+                            <img src="/assets/products/mac-03.jpg" class="product-img-thumbnail" alt="Nombre del producto" onclick="selectImage('/assets/products/mac-03.jpg')">
+                        </li>
+                        <li class="product-thumbnails-item">
+                            <img src="/assets/products/mac-04.jpg" class="product-img-thumbnail" alt="Nombre del producto" onclick="selectImage('/assets/products/mac-04.jpg')">
+                        </li>
+                    </ul>
+                    <div class="procut-img-wrapper">
+                        <img id="selected-image" src="/assets/products/mac-01.jpg" class="product-img" alt="Nombre del producto">
+                    </div>
+                    
+                </div>
+                <div class="product-info">
+                    <div class="product-title-wrapper">
+                        <h2>Nombre del producto</h2>
+                        <p class="p-smaller ">Art: 1234567890</p>
+                    </div>
+                    <div class="product-brand">
+                        <img class="product-brand-img" alt="Marca del producto" src="/assets/logos/busisness/apple.svg">
+                    </div>
+                    <div class="product-description-price">
+                        <p class="price b-regular"><span class="price-discount ">$11.0000 </span> $10.0000 </p>
+                        <div class="price-with-card-wrapper">
+                            <img class="price-with-card-logo" src="/assets/logos/paymentmethod/mastercard.svg" alt="">
+                            <p class="price-with-card b-small">$10.0000</p>
+                        </div>
+                       
+                    </div>
+                    <div class="product-description p-smaller">
+                        <h4>Descripción del producto</h4>
+                        <p class="p-small">Apple M2 8-Core Chip
+                            <br>
+                            8GB Unified RAM
+                            <br>
+                            256GB SSD
+                            <br>
+                            13.6″ 2560 x 1664 Liquid Retina Display
+                            <br>
+                            8-Core GPU | 16-Core Neural Engine
+                            <br>
+                            Wi-Fi 6 (802.11ax) | Bluetooth 5.0
+                            <br>
+                            Thunderbolt 3
+                            <br>
+                            FaceTime Full HD 1080p Camera
+                            <br>
+                            Backlit Magic Keyboard
+                            <br>
+                            Force Touch Trackpad | Touch ID Sensor
+                            macOS</p>
+                    </div>
+                    <div class="product-variant p-smaller ">
+                        <h4>Variantes</h4>
+                        <div class="product-variant-list">
+                            <img src="/assets/products/mac-01.jpg" class="product-variant-img selected" alt="Nombre del producto">
+                            <img src="/assets/products/mac-02.jpg" class="product-variant-img" alt="Nombre del producto">
+                        </div>
+                    </div>
+                    <form class="product-stock-section" action="">
+                        <div class="product-stock p-smaller ">
+                            <h4>Talles en stock</h4>
+                            <div class="product-stock-list">
+                                <label class="product-stock-item selected">SM</label>
+                                <label class="product-stock-item">ML</label>
+                            </div>
+                        </div>
+                        <div class="product-price p-smaller ">
+                            <a href="#" class="size-guide">
+                                <svg viewBox="0 0 100 100" alt="Icono 3" class="size-guide-icon">
+                                    <use xlink:href="icons/ruler.svg#ruler"></use>
+                                </svg>
+                                <p>Guía de talles</p>
+                            </a>
+                            
+                            <div class="product-price-list">
+                                <div class="product-count-wrapper">
+                                    <select class="product-price-count"> 
+                                        <option value="1" selected>Cant: 1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <button class="procut-price-buy">Comprar</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="product-methods p-smaller ">
+                        <details class="product-methods-list">
+                            <summary class="product-methods-title b-small ">
+                                <img src="/icons/card.svg" class="product-methods-icon" alt="icon">
+                                Métodos y costos de envío</summary>
+                            <p class="product-methods-item">Envíos Interior | UES 1 - 5 días hábiles.:</p>
+                            <p class="product-methods-item">Costo normal: $ 250.</p>
+                            <p class="product-methods-item">Envíos en Montevideo | PedidosYa - 1 a 5 días hábiles:</p>
+                            <p class="product-methods-item">Costo normal: $ 250.</p>
+                        </details>
+                        <details class="product-methods-list">
+                            <summary class="product-methods-title b-small ">
+                                <img src="/icons/list.svg" class="product-methods-icon" alt="icon">Caraterísticas</summary>
+                            <p class="product-methods-item">Envíos Interior | UES 1 - 5 días hábiles.:</p>
+                            <p class="product-methods-item">Costo normal: $ 250.</p>
+                            <p class="product-methods-item">Envíos en Montevideo | PedidosYa - 1 a 5 días hábiles:</p>
+                            <p class="product-methods-item">Costo normal: $ 250.</p>
+                        </details>
+                    </div>
+                </div>
             </div>
         </div>  
     </section>
 
-         <!-- Detalles de ventas y envío -->
-         <section class="layout-full-width padding-64 section-padding-bottom">
-          <div class="layout-container hidden">
-              <div class="relative">
-                  <div class="card-smaller-section">  
-                      <div class="card-smaller relative">
-                          <svg viewBox="0 0 100 100" alt="Credit Card" class="card-smaller-icon">
-                              <use xlink:href="icons/creditcard.svg#creditcard"></use>
-                            </svg>
-                          <div class="card-smaller-text">
-                              <p class="p-smaller ">Compra online</p>
-                              <p class="p-small ">Hasta 12 cuotas sin recargo con OCA</p>
-                              <p class="p-small ">Hasta 10 cuotas sin recargo con VISA</p>
-                              <p class="p-small ">Hasta 6 cuotas sin recargo con Master</p>
-                          </div>
-                      </div>
-                      <span class="card-smaller-divider"></span>
-                      <div class="card-smaller relative">
-                          <svg viewBox="0 0 100 100" alt="Truck" class="card-smaller-icon">
-                              <use xlink:href="icons/truck.svg#truck"></use>
-                            </svg>
-                          <div class="card-smaller-text">
-                              <p class="p-smaller ">Compra online</p>
-                              <p class="p-small ">Envíos a todo Uruguay</p>
-                          </div>
-                      </div>
-                      <span class="card-smaller-divider"></span>
-                      <div class="card-smaller relative">
-                          <svg viewBox="0 0 100 100" alt="Shield" class="card-smaller-icon">
-                              <use xlink:href="icons/shieldcheck.svg#shield"></use>
-                            </svg>
-                          <div class="card-smaller-text">
-                              <p class="p-smaller ">Compra Seguro</p>
-                              <p class="p-small ">Productos con garatía oficial</p>
-                          </div>
-                      </div>
-                  </div>
-  
-              </div>
-          </div>
-      </section>
-      
-      <!-- Categorías -->
-      <section class="layout-full-width padding-64 section-padding-bottom">
-          <div class="layout-container hidden">
-              <div class="relative">
-                  <div class="card-categories-section">
-                      <div class="card-categorie relative">
-                          <div class="card-categorie-img-wrapper">
-                              <img class="card-categorie-image" src="./assets/categories/iphone.png" alt="Sortijas Ghuna">
-                          </div>
-                              <p class="b-regular ">iPhone</p>
-                      </div>
-                      <div class="card-categorie relative">
-                          <div class="card-categorie-img-wrapper">
-                              <img class="card-categorie-image" src="./assets/categories/samsung.png" alt="Sortijas Ghuna">
-                          </div>
-                              <p class="b-regular ">Samsung</p>
-                      </div>
-                      <div class="card-categorie relative">
-                          <div class="card-categorie-img-wrapper">
-                              <img class="card-categorie-image" src="./assets/categories/ipad.png" alt="Sortijas Ghuna">
-                          </div>
-                              <p class="b-regular ">iPad</p>
-                      </div>
-                      <div class="card-categorie relative">
-                          <div class="card-categorie-img-wrapper">
-                              <img class="card-categorie-image" src="./assets/categories/mac.png" alt="Sortijas Ghuna">
-                          </div>
-                              <p class="b-regular ">MacBook</p>
-                      </div>
-                      <div class="card-categorie relative">
-                          <div class="card-categorie-img-wrapper">
-                              <img class="card-categorie-image" src="./assets/categories/airpods.png" alt="Sortijas Ghuna">
-                          </div>
-                              <p class="b-regular ">AirPods</p>
-                      </div>
-                      <div class="card-categorie relative">
-                          <div class="card-categorie-img-wrapper">
-                              <img class="card-categorie-image" src="./assets/categories/applewatch.png" alt="Sortijas Ghuna">
-                          </div>
-                              <p class="b-regular ">AppleWatch</p>
-                      </div>
-                      
-  
-                     
-                  </div>
-  
-              </div>
-              
-              
-          </div>
-  
-      
-      <!-- Card section    -->
-      </section>
-  
-      <!-- Products -->
-      <section class="layout-full-width padding-64 section-padding-bottom">
-          <div class="layout-container hidden">
-              <div class="relative">
-                  <button class="button-slider-left">
-                      <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
-                          <use xlink:href="icons/caret-left.svg#caret-left"></use>
-                      </svg>
-                  </button>
-                  <button class="button-slider-right">
-                      <svg viewBox="0 0 100 100" alt="Icono 3" class="button-slider-icon">
-                          <use xlink:href="icons/caret-right.svg#caret-right"></use>
-                      </svg>
-                  </button>
-                  <div class="slider">
-                      
-                      <div class="card relative">
-                          <div class="card-img-wrapper">
-                              <img class="card-img" src="./assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
-                             <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                                  <use xlink:href="icons/heart.svg#heart"></use>
-                              </svg>
-                          </div>
-                          <div class="card-text">
-                              <p class="p-small ">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
-                              <p class="b-regular ">$990</p>
-                          </div>
-                          
-                      </div>
-                      <div class="card relative">
-                          <div class="card-img-wrapper">
-                              <img class="card-img" src="/assets/products/mac-02.jpeg" alt="Sortijas Ghuna">
-                             <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                                  <use xlink:href="icons/heart.svg#heart"></use>
-                              </svg>
-                          </div>
-                          <div class="card-text">
-                              <p class="p-small ">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
-                              <p class="b-regular ">$990</p>
-                          </div>
-                          
-                      </div>
-                      <div class="card relative">
-                          <div class="card-img-wrapper"> 
-                              <img class="card-img" src="/assets/products/mac-03.jpg" alt="Sortijas Ghuna">
-                             <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                                  <use xlink:href="icons/heart.svg#heart"></use>
-                              </svg>
-                          </div>
-                          <div class="card-text">
-                          <p class="p-small ">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
-                          <p class="b-regular ">$990</p></div>
-                         
-                      </div>
-                      <div class="card relative">
-                          <div class="card-img-wrapper">
-                              <img class="card-img" src="/assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
-                             <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                                  <use xlink:href="icons/heart.svg#heart"></use>
-                              </svg>
-                          </div>
-                          <div class="card-text">
-                              <p class="p-small ">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
-                              <p class="b-regular ">$990</p>
-                          </div>
-                          
-                      </div>
-                      <div class="card relative">
-                          <div class="card-img-wrapper">
-                              <img class="card-img" src="/assets/products/mac-04.jpg" alt="Sortijas Ghuna">
-                             <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
-                                  <use xlink:href="icons/heart.svg#heart"></use>
-                              </svg>
-                          </div>
-                          <div class="card-text">
-                              <p class="p-small ">MacBook Air (M2, 8 RAM, 256 GB SSD, Space Gray)</p>
-                              <p class="b-regular ">$990</p>
-                          </div>
-                
-                      </div>
-                     
-                  </div>
-      
-              </div>
-              
-              
-          </div>
-         
-      </section>
-  
-      <!-- Bento -->
-      <section class="layout-full-width padding-64 section-padding-bottom">
-          <div class="layout-container hidden">
-              <div class="relative">
-  
-                  <div class="bento-section">
-                      <div class="bento-card relative">
-                          <div class="bento-text">
-                              <h3 class="headline-small ">iPhone</h3>
-                              <p class="p-regular bento-description">Potencia y elegancia en solo dispositivo</p>
-                              <a class="bento-button" href="#">Ver más</a>
-                          </div>
-                              <img class="bento-img" src="./assets/bento/iphones.png" alt="Sortijas Ghuna">          
-                      </div>
-                      <div class="bento-card relative">
-                          <div class="bento-text">
-                              <h3 class="headline-small ">MacBook</h3>
-                              <p class="p-regular bento-description">Productividad sin fronteras</p>
-                              <a class="bento-button" href="#">Ver más</a>
-                          </div>
-                              <img class="bento-img" src="./assets/bento/macbookm3.jpg" alt="Sortijas Ghuna">          
-                      </div>
-                  </div>
-                  <div class="bento-section">
-                      <div class="bento-card relative">
-                          <div class="bento-text-small">
-                              <h3 class="headline-small ">iPad</h3>
-                              <p class="p-regular bento-description">Inspiración en cada pixel</p>
-                              <a class="bento-button" href="#">Ver más</a>
-                          </div>
-                              <img class="bento-img-ipad" src="./assets/bento/ipads.png" alt="Sortijas Ghuna">          
-                      </div>
-                      <div class="bento-card relative">
-                          <div class="bento-text-small">
-                              <h3 class="headline-small ">Apple Watch</h3>
-                              <p class="p-regular bento-description">Conectividad sin límites</p>
-                              <a class="bento-button" href="#">Ver más</a>
-                          </div>
-                              <img class="bento-img-watch" src="./assets/bento/applewatch.png" alt="Sortijas Ghuna">          
-                      </div>
-                      <div class="bento-card relative">
-                          <div class="bento-text-small">
-                              <h3 class="headline-small ">Airpods</h3>
-                              <p class="p-regular bento-description">Sonido perfecto en cada nota</p>
-                              <a class="bento-button" href="#">Ver más</a>
-                          </div>
-                              <img class="bento-img-airpods" src="./assets/bento/airpods.png" alt="Sortijas Ghuna">          
-                      </div>
-                  </div>
-              </div>
-          </div>  
-      </section>
-
-
+     
     <!-- Products -->
     <section class="layout-full-width padding-64 section-padding-bottom">
         <div class="layout-container hidden">
@@ -357,7 +236,7 @@
                     
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="./assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
+                            <img class="card-img" src="./assets/products/mac-01.jpg " alt="Sortijas Ghuna">
                         <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
                                 <use xlink:href="icons/heart.svg#heart"></use>
                             </svg>
@@ -370,7 +249,7 @@
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="/assets/products/mac-02.jpeg" alt="Sortijas Ghuna">
+                            <img class="card-img" src="/assets/products/mac-02.jpg " alt="Sortijas Ghuna">
                         <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
                                 <use xlink:href="icons/heart.svg#heart"></use>
                             </svg>
@@ -395,7 +274,7 @@
                     </div>
                     <div class="card relative">
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="/assets/products/mac-01.jpeg" alt="Sortijas Ghuna">
+                            <img class="card-img" src="/assets/products/mac-01.jpg " alt="Sortijas Ghuna">
                         <svg viewBox="0 0 100 100" alt="Icono 3" class="card-icon" >
                                 <use xlink:href="icons/heart.svg#heart"></use>
                             </svg>
@@ -473,7 +352,6 @@
                   <a href="#" class="footer-mobile-link p-small">Envíos</a>
                   <a href="#" class="footer-mobile-link p-small">Cambios</a>
                   <a href="#" class="footer-mobile-link p-small">Términos y condiciones</a>
-
                 </details>
             </div>
            
@@ -558,8 +436,7 @@
         </div>
        
       </footer>
-<script src="script.js"></script>
-<script src="minicards.js"></script>
+<script src="select-img.js"></script>
     
 </body>
 

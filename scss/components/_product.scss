@@ -1,0 +1,283 @@
+@import "./colors";
+@import "./fonts";
+
+$size-variant: 40px;
+$border-variant: 2px solid $dark-800;
+$radius-variant: 8px;
+
+
+.wrapper-products-banner {
+    padding-top: 140px;
+    padding-bottom: 112px;
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 768px) {
+        padding-top: 112px;
+      }
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+.procut-img-wrapper {
+    width: 100%;
+}
+
+.product-images {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.product-thumbnails {
+
+}
+
+.product-thumbnails-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-thumbnails-item {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.product-img-thumbnail {
+    width: 80px;
+    text-decoration: none;
+    padding: 12px;
+    background-color: $dark-050;
+    border-radius: $radius-variant;  
+}
+
+.product-img-thumbnail.selected {
+    border: $border-variant;
+    border-radius: $radius-variant;       
+  }
+
+.product-image-wrapper {
+    width: 100%;
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+    display: block;
+    padding: 32px;
+    background-color: $dark-050;
+    border-radius: $radius-variant;  
+
+}
+
+.product-info {
+    padding: 32px 0;
+
+}
+
+.product-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+
+}
+
+.product-brand-img {
+    width: 24px;
+    margin-bottom: 16px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.product-variant,
+.product-stock,
+.product-price,
+.product-methods,
+.product-description-price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.product-description-price {
+
+}
+
+.price-discount {
+    text-decoration-line: line-through;
+    text-decoration-color: $dark-500;
+    color: $dark-400;
+    padding-right: 8px;
+}
+
+.price {   
+
+}
+
+.price-with-card-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.price-with-card-logo {
+    height: 16px;
+}
+
+.price-with-card {
+
+}
+
+.product-variant {
+    
+    
+}
+
+.product-variant-list {
+    display: flex;
+    gap: 8px;
+}
+
+.product-variant-img {
+    height: $size-variant;
+    width: $size-variant;
+    border-radius: $radius-variant;
+    padding: 4px;
+    background-color: $dark-050;
+}
+.product-variant-img.selected {
+    border: $border-variant; 
+}
+
+.product-stock {
+   
+
+}
+
+.product-stock-list {
+    display: flex;
+    gap: 8px;
+}
+
+.product-stock-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $size-variant;
+    width: $size-variant;
+    background-color: $dark-050;
+    border-radius: $radius-variant;
+}
+
+.product-stock-item.selected {
+    border: $border-variant; 
+}
+
+.size-guide {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.size-guide-icon {
+    height: 20px;
+    color: $dark-500;
+}
+
+.product-price {
+
+}
+
+.product-price-list {
+    display: flex;
+}
+
+.product-count-wrapper {
+    display: inline-flex;    
+    height: 40px;
+    padding-right: 8px;
+
+}
+
+.product-price-count {
+    appearance: none;
+    border: none;
+    padding: 0 16px;
+    text-align: center;
+    border-radius: none;
+    background-color: $dark-300;
+    cursor: pointer;
+}
+
+.product-price-count:focus {
+    outline: none;
+}
+
+.product-price-count option {
+    background-color: white; 
+    color: black; 
+}
+
+.procut-price-buy {
+    height: 40px;
+    appearance: none;
+    border: none;
+    padding: 0 96px;
+    text-align: center;
+    border-radius: none;
+    background-color: $dark-900;
+    color: $dark-050;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+       width: 100%;
+      }
+}
+
+
+.product-methods-list {
+    outline: none; 
+}
+.product-methods-title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    list-style: none; 
+    cursor: pointer;
+    color: $dark-800;
+}
+
+.product-methods-icon {
+    height: 20px;
+}
+
+.product-stock-section {
+    @media (max-width: 768px) {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        background-color: $dark-050;
+        width: 100%;
+        padding: 24px 24px 0 24px;
+        left: 0;
+        right: 0;
+      }
+}

@@ -1,61 +1,75 @@
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url('/assets/fonts/RalewayRegular-600.woff2');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url('/assets/fonts/RalewayItalic-300.woff2');
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url('/assets/fonts/RalewayItalic-400.woff2');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url('/assets/fonts/PlusJakarta-400.woff2');
-  font-weight: 400r;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url('/assets/fonts/PlusJakarta-700.woff2');
   font-weight: 700;
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heading', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: $dark-800;
+}
+
+p, 
+span,
+label,
+select,
+button, 
+details, 
+li {
+  font-family: 'Descriptions', sans-serif;
+  line-height: 1.6;
+  color: $dark-700;
+}
 
 .headline-bigger {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 72px;
-  line-height: 1.1;
-
   @media (max-width: 768px) {
     font-size: 32px;
   }
 }
 
 .headline-big {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 48px;
-  line-height: 1.1;
 
   @media (max-width: 768px) {
     font-size: 24px;
   }
 }
 .headline-big-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
-  line-height: 1.1;
   font-style: italic;
 
   @media (max-width: 768px) {
@@ -64,20 +78,16 @@
 }
 
 .headline-small {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 19px;
-  line-height: 1.1;
 
   @media (max-width: 768px) {
     font-size: 16px;
   }
 }
 .headline-small-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
-  line-height: 1.1;
   font-style: italic;
 
   @media (max-width: 768px) {
@@ -86,8 +96,6 @@
 }
 
 .headliner-smaller {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.1;
 
@@ -97,10 +105,8 @@
 }
 
 .p-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.6;
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -108,20 +114,16 @@
 }
 
 .p-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.6;
 
   @media (max-width: 768px) {
     font-size: 12px;
   }
 }
 .p-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6;
 
   @media (max-width: 768px) {
     font-size: 10px;
@@ -129,10 +131,8 @@
 }
 
 .b-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.6;
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -140,10 +140,8 @@
 }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.6;
 
   @media (max-width: 768px) {
     font-size: 12px;
@@ -151,10 +149,8 @@
 }
 
 .b-small {
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.6;
   
     @media (max-width: 768px) {
       font-size: 12px;
@@ -162,19 +158,10 @@
 }
 
 .b-smaller {
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.6;
   
     @media (max-width: 768px) {
       font-size: 10px;
     }
-}
-
-.italic {
-  font-style: italic;
-}
-.uppercase {
-  text-transform: uppercase;
 }

@@ -9,6 +9,9 @@ img {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 .background-base {
   background-color: #F5F5F5;
   position: relative; }
@@ -81,86 +84,100 @@ img {
 .section-padding-bottom {
   margin-bottom: 40px; }
 
+.italic {
+  font-style: italic; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayRegular-600.woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-300.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-400.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-400.woff2");
-  font-weight: 400r;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
-.headline-bigger {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heading', sans-serif;
   font-weight: 600;
-  font-size: 72px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  color: #1C1F22; }
+
+p,
+span,
+label,
+select,
+button,
+details,
+li {
+  font-family: 'Descriptions', sans-serif;
+  line-height: 1.6;
+  color: #585D62; }
+
+.headline-bigger {
+  font-size: 72px; }
   @media (max-width: 768px) {
     .headline-bigger {
       font-size: 32px; } }
 
 .headline-big {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1; }
+  font-size: 48px; }
   @media (max-width: 768px) {
     .headline-big {
       font-size: 24px; } }
 
 .headline-big-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-big-italic {
       font-size: 24px; } }
 
 .headline-small {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 19px;
-  line-height: 1.1; }
+  font-size: 19px; }
   @media (max-width: 768px) {
     .headline-small {
       font-size: 16px; } }
 
 .headline-small-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-small-italic {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.1; }
   @media (max-width: 768px) {
@@ -168,73 +185,53 @@ img {
       font-size: 14px; } }
 
 .p-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .p-regular {
       font-size: 14px; } }
 
 .p-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .p-small {
       font-size: 12px; } }
 
 .p-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .p-smaller {
       font-size: 10px; } }
 
 .b-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .b-regular {
       font-size: 14px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .b-smaller {
       font-size: 10px; } }
-
-.italic {
-  font-style: italic; }
-
-.uppercase {
-  text-transform: uppercase; }
 
 .background-base {
   background-color: #F5F5F5;
@@ -603,85 +600,93 @@ img {
   text-align: center; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayRegular-600.woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-300.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-400.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-400.woff2");
-  font-weight: 400r;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
-.headline-bigger {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heading', sans-serif;
   font-weight: 600;
-  font-size: 72px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  color: #1C1F22; }
+
+p,
+span,
+label,
+select,
+button,
+details,
+li {
+  font-family: 'Descriptions', sans-serif;
+  line-height: 1.6;
+  color: #585D62; }
+
+.headline-bigger {
+  font-size: 72px; }
   @media (max-width: 768px) {
     .headline-bigger {
       font-size: 32px; } }
 
 .headline-big {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1; }
+  font-size: 48px; }
   @media (max-width: 768px) {
     .headline-big {
       font-size: 24px; } }
 
 .headline-big-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-big-italic {
       font-size: 24px; } }
 
 .headline-small {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 19px;
-  line-height: 1.1; }
+  font-size: 19px; }
   @media (max-width: 768px) {
     .headline-small {
       font-size: 16px; } }
 
 .headline-small-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-small-italic {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.1; }
   @media (max-width: 768px) {
@@ -689,73 +694,53 @@ img {
       font-size: 14px; } }
 
 .p-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .p-regular {
       font-size: 14px; } }
 
 .p-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .p-small {
       font-size: 12px; } }
 
 .p-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .p-smaller {
       font-size: 10px; } }
 
 .b-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .b-regular {
       font-size: 14px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .b-smaller {
       font-size: 10px; } }
-
-.italic {
-  font-style: italic; }
-
-.uppercase {
-  text-transform: uppercase; }
 
 .footer {
   max-width: 1440px;
@@ -1007,85 +992,93 @@ img {
   text-align: center; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayRegular-600.woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-300.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-400.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-400.woff2");
-  font-weight: 400r;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
-.headline-bigger {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heading', sans-serif;
   font-weight: 600;
-  font-size: 72px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  color: #1C1F22; }
+
+p,
+span,
+label,
+select,
+button,
+details,
+li {
+  font-family: 'Descriptions', sans-serif;
+  line-height: 1.6;
+  color: #585D62; }
+
+.headline-bigger {
+  font-size: 72px; }
   @media (max-width: 768px) {
     .headline-bigger {
       font-size: 32px; } }
 
 .headline-big {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1; }
+  font-size: 48px; }
   @media (max-width: 768px) {
     .headline-big {
       font-size: 24px; } }
 
 .headline-big-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-big-italic {
       font-size: 24px; } }
 
 .headline-small {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 19px;
-  line-height: 1.1; }
+  font-size: 19px; }
   @media (max-width: 768px) {
     .headline-small {
       font-size: 16px; } }
 
 .headline-small-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-small-italic {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.1; }
   @media (max-width: 768px) {
@@ -1093,73 +1086,53 @@ img {
       font-size: 14px; } }
 
 .p-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .p-regular {
       font-size: 14px; } }
 
 .p-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .p-small {
       font-size: 12px; } }
 
 .p-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .p-smaller {
       font-size: 10px; } }
 
 .b-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .b-regular {
       font-size: 14px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .b-smaller {
       font-size: 10px; } }
-
-.italic {
-  font-style: italic; }
-
-.uppercase {
-  text-transform: uppercase; }
 
 .slider {
   position: relative;
@@ -1533,85 +1506,93 @@ img {
   text-align: center; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayRegular-600.woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-300.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Heading';
   src: url("/assets/fonts/RalewayItalic-400.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-400.woff2");
-  font-weight: 400r;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Descriptions';
   src: url("/assets/fonts/PlusJakarta-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
-.headline-bigger {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heading', sans-serif;
   font-weight: 600;
-  font-size: 72px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  color: #1C1F22; }
+
+p,
+span,
+label,
+select,
+button,
+details,
+li {
+  font-family: 'Descriptions', sans-serif;
+  line-height: 1.6;
+  color: #585D62; }
+
+.headline-bigger {
+  font-size: 72px; }
   @media (max-width: 768px) {
     .headline-bigger {
       font-size: 32px; } }
 
 .headline-big {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1; }
+  font-size: 48px; }
   @media (max-width: 768px) {
     .headline-big {
       font-size: 24px; } }
 
 .headline-big-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 48px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-big-italic {
       font-size: 24px; } }
 
 .headline-small {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 19px;
-  line-height: 1.1; }
+  font-size: 19px; }
   @media (max-width: 768px) {
     .headline-small {
       font-size: 16px; } }
 
 .headline-small-italic {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 19px;
-  line-height: 1.1;
   font-style: italic; }
   @media (max-width: 768px) {
     .headline-small-italic {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.1; }
   @media (max-width: 768px) {
@@ -1619,73 +1600,53 @@ img {
       font-size: 14px; } }
 
 .p-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .p-regular {
       font-size: 14px; } }
 
 .p-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .p-small {
       font-size: 12px; } }
 
 .p-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .p-smaller {
       font-size: 10px; } }
 
 .b-regular {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .b-regular {
       font-size: 14px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-small {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6; }
+  font-size: 14px; }
   @media (max-width: 768px) {
     .b-small {
       font-size: 12px; } }
 
 .b-smaller {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 12px; }
   @media (max-width: 768px) {
     .b-smaller {
       font-size: 10px; } }
-
-.italic {
-  font-style: italic; }
-
-.uppercase {
-  text-transform: uppercase; }
 
 .button-slider-left {
   position: absolute;
@@ -1745,6 +1706,397 @@ img {
 .button-minicard-6 {
   top: 38%;
   left: 19%; }
+
+.background-base {
+  background-color: #F5F5F5;
+  position: relative; }
+
+.background-strong {
+  background-color: #FFFFFF; }
+
+.button {
+  background-color: #585D62;
+  display: flex;
+  align-self: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
+  border: none;
+  color: #585D62; }
+
+.text-strong {
+  color: #585D62; }
+
+.text-green-600 {
+  color: #1C1F22; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.divider-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center; }
+
+.divider-line {
+  flex-grow: 1;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #F7F7F7; }
+
+.divider-text {
+  text-align: center; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/RalewayItalic-300.woff2");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/RalewayItalic-400.woff2");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Descriptions';
+  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Descriptions';
+  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heading', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #1C1F22; }
+
+p,
+span,
+label,
+select,
+button,
+details,
+li {
+  font-family: 'Descriptions', sans-serif;
+  line-height: 1.6;
+  color: #585D62; }
+
+.headline-bigger {
+  font-size: 72px; }
+  @media (max-width: 768px) {
+    .headline-bigger {
+      font-size: 32px; } }
+
+.headline-big {
+  font-size: 48px; }
+  @media (max-width: 768px) {
+    .headline-big {
+      font-size: 24px; } }
+
+.headline-big-italic {
+  font-weight: 300;
+  font-size: 48px;
+  font-style: italic; }
+  @media (max-width: 768px) {
+    .headline-big-italic {
+      font-size: 24px; } }
+
+.headline-small {
+  font-weight: 600;
+  font-size: 19px; }
+  @media (max-width: 768px) {
+    .headline-small {
+      font-size: 16px; } }
+
+.headline-small-italic {
+  font-weight: 300;
+  font-size: 19px;
+  font-style: italic; }
+  @media (max-width: 768px) {
+    .headline-small-italic {
+      font-size: 16px; } }
+
+.headliner-smaller {
+  font-size: 16px;
+  line-height: 1.1; }
+  @media (max-width: 768px) {
+    .headliner-smaller {
+      font-size: 14px; } }
+
+.p-regular {
+  font-weight: 400;
+  font-size: 16px; }
+  @media (max-width: 768px) {
+    .p-regular {
+      font-size: 14px; } }
+
+.p-small {
+  font-weight: 400;
+  font-size: 14px; }
+  @media (max-width: 768px) {
+    .p-small {
+      font-size: 12px; } }
+
+.p-smaller {
+  font-weight: 400;
+  font-size: 12px; }
+  @media (max-width: 768px) {
+    .p-smaller {
+      font-size: 10px; } }
+
+.b-regular {
+  font-weight: 700;
+  font-size: 16px; }
+  @media (max-width: 768px) {
+    .b-regular {
+      font-size: 14px; } }
+
+.b-small {
+  font-weight: 700;
+  font-size: 14px; }
+  @media (max-width: 768px) {
+    .b-small {
+      font-size: 12px; } }
+
+.b-small {
+  font-weight: 700;
+  font-size: 14px; }
+  @media (max-width: 768px) {
+    .b-small {
+      font-size: 12px; } }
+
+.b-smaller {
+  font-weight: 700;
+  font-size: 12px; }
+  @media (max-width: 768px) {
+    .b-smaller {
+      font-size: 10px; } }
+
+.wrapper-products-banner {
+  padding-top: 140px;
+  padding-bottom: 112px;
+  width: 100%;
+  height: auto; }
+  @media (max-width: 768px) {
+    .wrapper-products-banner {
+      padding-top: 112px; } }
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px; }
+  @media (max-width: 768px) {
+    .product-container {
+      display: flex;
+      flex-direction: column; } }
+
+.procut-img-wrapper {
+  width: 100%; }
+
+.product-images {
+  display: flex;
+  gap: 16px;
+  width: 100%; }
+
+.product-thumbnails-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; }
+
+.product-thumbnails-item {
+  list-style-type: none;
+  cursor: pointer; }
+
+.product-img-thumbnail {
+  width: 80px;
+  text-decoration: none;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 8px; }
+
+.product-img-thumbnail.selected {
+  border: 2px solid #1C1F22;
+  border-radius: 8px; }
+
+.product-image-wrapper {
+  width: 100%; }
+
+.product-img {
+  display: block;
+  width: 100%;
+  display: block;
+  padding: 32px;
+  background-color: #FFFFFF;
+  border-radius: 8px; }
+
+.product-info {
+  padding: 32px 0; }
+
+.product-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px; }
+
+.product-brand-img {
+  width: 24px;
+  margin-bottom: 16px; }
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px; }
+
+.product-variant,
+.product-stock,
+.product-price,
+.product-methods,
+.product-description-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px; }
+
+.price-discount {
+  text-decoration-line: line-through;
+  text-decoration-color: #93999F;
+  color: #BEC2C5;
+  padding-right: 8px; }
+
+.price-with-card-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center; }
+
+.price-with-card-logo {
+  height: 16px; }
+
+.product-variant-list {
+  display: flex;
+  gap: 8px; }
+
+.product-variant-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #FFFFFF; }
+
+.product-variant-img.selected {
+  border: 2px solid #1C1F22; }
+
+.product-stock-list {
+  display: flex;
+  gap: 8px; }
+
+.product-stock-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #FFFFFF;
+  border-radius: 8px; }
+
+.product-stock-item.selected {
+  border: 2px solid #1C1F22; }
+
+.size-guide {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px; }
+
+.size-guide-icon {
+  height: 20px;
+  color: #93999F; }
+
+.product-price-list {
+  display: flex; }
+
+.product-count-wrapper {
+  display: inline-flex;
+  height: 40px;
+  padding-right: 8px; }
+
+.product-price-count {
+  appearance: none;
+  border: none;
+  padding: 0 16px;
+  text-align: center;
+  border-radius: none;
+  background-color: #E9EBEC;
+  cursor: pointer; }
+
+.product-price-count:focus {
+  outline: none; }
+
+.product-price-count option {
+  background-color: white;
+  color: black; }
+
+.procut-price-buy {
+  height: 40px;
+  appearance: none;
+  border: none;
+  padding: 0 96px;
+  text-align: center;
+  border-radius: none;
+  background-color: #010101;
+  color: #FFFFFF;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .procut-price-buy {
+      width: 100%; } }
+
+.product-methods-list {
+  outline: none; }
+
+.product-methods-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  color: #1C1F22; }
+
+.product-methods-icon {
+  height: 20px; }
+
+@media (max-width: 768px) {
+  .product-stock-section {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 24px 24px 0 24px;
+    left: 0;
+    right: 0; } }
 
 .wrapper-main-banner {
   background-image: url(../assets/utex-banner.jpg);
