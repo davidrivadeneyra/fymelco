@@ -1675,6 +1675,7 @@ li {
 .button-slider-left {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 10;
   left: -16px;
   display: inline-flex;
@@ -1690,6 +1691,7 @@ li {
 .button-slider-right {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 10;
   right: -16px;
   display: inline-flex;
@@ -2029,7 +2031,7 @@ li {
     .thumbnail-indicators {
       display: flex;
       justify-content: center;
-      gap: 8px;
+      gap: 12px;
       margin-top: 16px; } }
 
 .indicator {
