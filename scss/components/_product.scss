@@ -68,7 +68,7 @@ $radius-variant: 0;
         will-change: transform;
         transition: transform 0.3s ease-out;
         cursor: grabbing;
-        overflow-x: auto; // Allow horizontal scrolling
+        overflow-x: scroll;
     }
 }
 
@@ -117,15 +117,42 @@ $radius-variant: 0;
 }
 
 
-.product-img-thumbnail.selected {
+.selected {
     border: $border-variant;
     border-radius: $radius-variant;
 
     @media (max-width: $md) {
         border: none;
     }
-    
-  }
+}
+
+
+.thumbnail-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: $dark-400; /* Color claro por defecto */
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.indicator.active {
+    background-color: $dark-900; /* Color oscuro cuando está activo */
+}
+
+@media (max-width: $md) {
+    .thumbnail-indicators {
+        margin-top: 12px;
+    }
+}
+
+
 
 .product-image-wrapper {
     width: 100%;
