@@ -15,6 +15,7 @@ $radius-variant: 0;
 
     @media (max-width: $md) {
         padding-top: 112px;
+        padding-bottom: 64px;
       }
 }
 
@@ -44,8 +45,9 @@ $radius-variant: 0;
     }
 
     @media (max-width: $md) {
-        padding: 0;
-       }
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
 }
 
 .product-thumbnails {
@@ -56,24 +58,57 @@ $radius-variant: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (max-width: $md) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9px;
+    }
 }
 
 .product-thumbnails-item {
     list-style-type: none;
     cursor: pointer;
+
+    @media (max-width: $md) {
+        border-radius: 100%;
+    }
 }
 
 .product-img-thumbnail {
     width: 64px;
+    height: 64px;
     text-decoration: none;
     padding: 12px;
     background-color: $dark-050;
-    border-radius: $radius-variant;  
+    border-radius: $radius-variant; 
+
+    @media (max-width: $xl) {
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+    }
+    @media (max-width: $md) {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: $dark-400;
+    }
+
+   
 }
 
 .product-img-thumbnail.selected {
     border: $border-variant;
-    border-radius: $radius-variant;       
+    border-radius: $radius-variant;
+
+    @media (max-width: $md) {
+        border-radius: 100%;
+        background-color: $dark-900;
+        border: none;
+    }
+    
   }
 
 .product-image-wrapper {
@@ -87,7 +122,6 @@ $radius-variant: 0;
     padding: 32px;
     background-color: $dark-050;
     border-radius: $radius-variant;  
-
 }
 
 .product-info {
@@ -123,6 +157,10 @@ $radius-variant: 0;
     flex-direction: column;
     gap: 8px;
     margin-bottom: 32px;
+
+    @media (max-width: $md) {
+        margin-bottom: 16px;
+    }
 }
 
 .product-description-price {
@@ -288,5 +326,6 @@ $radius-variant: 0;
         padding: 24px 24px 0 24px;
         left: 0;
         right: 0;
+        // display: none;
       }
 }
