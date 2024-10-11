@@ -2210,8 +2210,7 @@ li {
     width: 100%;
     padding: 24px 24px 0 24px;
     left: 0;
-    right: 0;
-    display: none; } }
+    right: 0; } }
 
 .wrapper-main-banner {
   background-image: url(../assets/utex-banner.jpg);
