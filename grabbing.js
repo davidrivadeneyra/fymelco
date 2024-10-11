@@ -1,82 +1,67 @@
-// get our elements
-const slider = document.querySelector('.product-thumbnails-list'),
-slides = Array.from(document.querySelectorAll('.product-thumbnails-item'))
+const productList = document.querySelector('.product-thumbnails-list');
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let animationID;
+let startIndex = 0;
 
-// set up our state
-let isDragging = false,
-  startPos = 0,
-  currentTranslate = 0,
-  prevTranslate = 0,
-  animationID,
-  currentIndex = 0
+// Añadir eventos de mouse y touch
+productList.addEventListener('mousedown', startDrag);
+productList.addEventListener('touchstart', startDrag);
 
-// add our event listeners
-slides.forEach((slide, index) => {
-  const slideImage = slide.querySelector('.product-thumbnail-img')
-  // disable default image drag
-  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
-  // pointer events
-  slide.addEventListener('pointerdown', pointerDown(index))
-  slide.addEventListener('pointerup', pointerUp)
-  slide.addEventListener('pointerleave', pointerUp)
-  slide.addEventListener('pointermove', pointerMove)
-})
+productList.addEventListener('mouseup', endDrag);
+productList.addEventListener('touchend', endDrag);
 
-// make responsive to viewport changes
-window.addEventListener('resize', setPositionByIndex)
+productList.addEventListener('mousemove', drag);
+productList.addEventListener('touchmove', drag);
 
-// prevent menu popup on long press
-window.oncontextmenu = function (event) {
-  event.preventDefault()
-  event.stopPropagation()
-  return false
+// Empezar el drag
+function startDrag(e) {
+  isDragging = true;
+  startPos = getPositionX(e);
+  startIndex = currentTranslate;
+
+  // Animación suave
+  animationID = requestAnimationFrame(animation);
 }
 
-// use a HOF so we have index in a closure
-function pointerDown(index) {
-  return function (event) {
-    currentIndex = index
-    startPos = event.clientX
-    isDragging = true
-    animationID = requestAnimationFrame(animation)
-    slider.classList.add('grabbing')
+// Terminar el drag
+function endDrag() {
+  isDragging = false;
+  cancelAnimationFrame(animationID);
+  
+  const movedBy = currentTranslate - prevTranslate;
+  
+  // Hacer el loop infinito
+  if (movedBy < -100) {
+    currentTranslate -= 100; // Ajustar según el ancho de la lista
+  } else if (movedBy > 100) {
+    currentTranslate += 100;
   }
+
+  prevTranslate = currentTranslate;
+  productList.style.transform = `translateX(${currentTranslate}px)`;
 }
 
-function pointerMove(event) {
+// Realizar el drag
+function drag(e) {
   if (isDragging) {
-    const currentPosition = event.clientX
-    currentTranslate = prevTranslate + currentPosition - startPos
+    const currentPosition = getPositionX(e);
+    currentTranslate = prevTranslate + currentPosition - startPos;
+    productList.style.transform = `translateX(${currentTranslate}px)`;
   }
 }
 
-function pointerUp() {
-  cancelAnimationFrame(animationID)
-  isDragging = false
-  const movedBy = currentTranslate - prevTranslate
-
-  // if moved enough negative then snap to next slide if there is one
-  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
-
-  // if moved enough positive then snap to previous slide if there is one
-  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
-
-  setPositionByIndex()
-
-  slider.classList.remove('grabbing')
+// Obtener la posición X (para mouse o touch)
+function getPositionX(e) {
+  return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
 }
 
+// Animación para hacer que el movimiento sea suave
 function animation() {
-  setSliderPosition()
-  if (isDragging) requestAnimationFrame(animation)
-}
-
-function setPositionByIndex() {
-  currentTranslate = currentIndex * -window.innerWidth
-  prevTranslate = currentTranslate
-  setSliderPosition()
-}
-
-function setSliderPosition() {
-  slider.style.transform = `translateX(${currentTranslate}px)`
+  if (isDragging) {
+    productList.style.transform = `translateX(${currentTranslate}px)`;
+    requestAnimationFrame(animation);
+  }
 }
