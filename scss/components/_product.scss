@@ -128,22 +128,26 @@ $radius-variant: 0;
 
 
 .thumbnail-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 16px;
+    display: none;
+
+    @media (max-width: $md) {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 16px;
+    }
 }
 
 .indicator {
     width: 12px;
     height: 12px;
-    background-color: $dark-400; /* Color claro por defecto */
+    background-color: $dark-400; 
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out;
 }
 
 .indicator.active {
-    background-color: $dark-900; /* Color oscuro cuando está activo */
+    background-color: $dark-900;
 }
 
 @media (max-width: $md) {
