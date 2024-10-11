@@ -59,7 +59,7 @@ $radius-variant: 0;
     gap: 16px;
 
     @media (max-width: $md) {
-         display: inline-flex;
+        display: inline-flex;
         flex-direction: row;
         scrollbar-width: none;
         scroll-snap-type: x mandatory; 
@@ -67,6 +67,7 @@ $radius-variant: 0;
         will-change: transform;
         transition: transform 0.3s ease-out;
         cursor: grabbing;
+        overflow-x: auto; // Allow horizontal scrolling
     }
 }
 

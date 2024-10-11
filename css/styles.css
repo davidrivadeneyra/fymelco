@@ -1975,7 +1975,8 @@ li {
       transform: translateX(0);
       will-change: transform;
       transition: transform 0.3s ease-out;
-      cursor: grabbing; } }
+      cursor: grabbing;
+      overflow-x: auto; } }
 
 .product-thumbnails-item {
   list-style-type: none;

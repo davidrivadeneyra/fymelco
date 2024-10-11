@@ -1,67 +1,61 @@
-const productList = document.querySelector('.product-thumbnails-list');
+const thumbnailsList = document.querySelector('.product-thumbnails-list');
 let isDragging = false;
-let startPos = 0;
-let currentTranslate = 0;
-let prevTranslate = 0;
-let animationID;
-let startIndex = 0;
+let startX;
+let scrollLeft;
 
-// Añadir eventos de mouse y touch
-productList.addEventListener('mousedown', startDrag);
-productList.addEventListener('touchstart', startDrag);
-
-productList.addEventListener('mouseup', endDrag);
-productList.addEventListener('touchend', endDrag);
-
-productList.addEventListener('mousemove', drag);
-productList.addEventListener('touchmove', drag);
-
-// Empezar el drag
-function startDrag(e) {
+thumbnailsList.addEventListener('mousedown', (e) => {
   isDragging = true;
-  startPos = getPositionX(e);
-  startIndex = currentTranslate;
+  thumbnailsList.classList.add('grabbing');
+  startX = e.pageX - thumbnailsList.offsetLeft;
+  scrollLeft = thumbnailsList.scrollLeft;
+});
 
-  // Animación suave
-  animationID = requestAnimationFrame(animation);
-}
-
-// Terminar el drag
-function endDrag() {
+thumbnailsList.addEventListener('mouseleave', () => {
   isDragging = false;
-  cancelAnimationFrame(animationID);
-  
-  const movedBy = currentTranslate - prevTranslate;
-  
-  // Hacer el loop infinito
-  if (movedBy < -100) {
-    currentTranslate -= 100; // Ajustar según el ancho de la lista
-  } else if (movedBy > 100) {
-    currentTranslate += 100;
+  thumbnailsList.classList.remove('grabbing');
+});
+
+thumbnailsList.addEventListener('mouseup', () => {
+  isDragging = false;
+  thumbnailsList.classList.remove('grabbing');
+});
+
+thumbnailsList.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - thumbnailsList.offsetLeft;
+  const walk = (x - startX) * 2; // Velocidad del drag
+  thumbnailsList.scrollLeft = scrollLeft - walk;
+
+  // Si llegamos al final, volvemos al principio
+  if (thumbnailsList.scrollLeft === 0) {
+    thumbnailsList.scrollLeft = thumbnailsList.scrollWidth;
+  } else if (thumbnailsList.scrollLeft >= thumbnailsList.scrollWidth - thumbnailsList.clientWidth) {
+    thumbnailsList.scrollLeft = 0;
   }
+});
 
-  prevTranslate = currentTranslate;
-  productList.style.transform = `translateX(${currentTranslate}px)`;
-}
+// Para soportar drag en dispositivos táctiles
+thumbnailsList.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  startX = e.touches[0].pageX - thumbnailsList.offsetLeft;
+  scrollLeft = thumbnailsList.scrollLeft;
+});
 
-// Realizar el drag
-function drag(e) {
-  if (isDragging) {
-    const currentPosition = getPositionX(e);
-    currentTranslate = prevTranslate + currentPosition - startPos;
-    productList.style.transform = `translateX(${currentTranslate}px)`;
+thumbnailsList.addEventListener('touchend', () => {
+  isDragging = false;
+});
+
+thumbnailsList.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  const x = e.touches[0].pageX - thumbnailsList.offsetLeft;
+  const walk = (x - startX) * 2; // Velocidad del drag
+  thumbnailsList.scrollLeft = scrollLeft - walk;
+
+  // Comportamiento infinito
+  if (thumbnailsList.scrollLeft === 0) {
+    thumbnailsList.scrollLeft = thumbnailsList.scrollWidth;
+  } else if (thumbnailsList.scrollLeft >= thumbnailsList.scrollWidth - thumbnailsList.clientWidth) {
+    thumbnailsList.scrollLeft = 0;
   }
-}
-
-// Obtener la posición X (para mouse o touch)
-function getPositionX(e) {
-  return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-}
-
-// Animación para hacer que el movimiento sea suave
-function animation() {
-  if (isDragging) {
-    productList.style.transform = `translateX(${currentTranslate}px)`;
-    requestAnimationFrame(animation);
-  }
-}
+});
