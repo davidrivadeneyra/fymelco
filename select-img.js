@@ -10,3 +10,4 @@ function selectImage(imageSrc) {
   
     document.getElementById('selected-image').src = imageSrc;
   }
+

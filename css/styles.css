@@ -1946,6 +1946,9 @@ li {
 
 .procut-img-wrapper {
   width: 100%; }
+  @media (max-width: 768px) {
+    .procut-img-wrapper {
+      display: none; } }
 
 .product-images {
   display: flex;
@@ -1957,8 +1960,7 @@ li {
       padding: 0; } }
   @media (max-width: 768px) {
     .product-images {
-      flex-direction: column;
-      flex-flow: column-reverse; } }
+      flex-direction: column; } }
 
 .product-thumbnails-list {
   display: flex;
@@ -1966,19 +1968,24 @@ li {
   gap: 16px; }
   @media (max-width: 768px) {
     .product-thumbnails-list {
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
-      justify-content: center;
-      gap: 9px; } }
+      scrollbar-width: none;
+      transform: translateX(0);
+      will-change: transform;
+      transition: transform 0.3s ease-out;
+      cursor: grabbing; } }
 
 .product-thumbnails-item {
   list-style-type: none;
   cursor: pointer; }
   @media (max-width: 768px) {
     .product-thumbnails-item {
-      border-radius: 100%; } }
+      width: 100vw;
+      max-width: 100%;
+      flex-shrink: 0; } }
 
-.product-img-thumbnail {
+.product-thumbnail-img {
   width: 64px;
   height: 64px;
   text-decoration: none;
@@ -1986,24 +1993,30 @@ li {
   background-color: #FFFFFF;
   border-radius: 0; }
   @media (max-width: 1280px) {
-    .product-img-thumbnail {
+    .product-thumbnail-img {
       width: 56px;
       height: 56px;
       padding: 8px; } }
   @media (max-width: 768px) {
-    .product-img-thumbnail {
-      width: 12px;
-      height: 12px;
-      border-radius: 100%;
-      background-color: #BEC2C5; } }
+    .product-thumbnail-img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      transition: transform 0.3s ease-in-out;
+      user-select: none; } }
+
+.grabbing {
+  cursor: grabbing; }
+
+.grabbing .product-thumbnails-list {
+  transform: scale(0.9); }
 
 .product-img-thumbnail.selected {
   border: 2px solid #1C1F22;
   border-radius: 0; }
   @media (max-width: 768px) {
     .product-img-thumbnail.selected {
-      border-radius: 100%;
-      background-color: #010101;
       border: none; } }
 
 .product-image-wrapper {
@@ -2168,7 +2181,8 @@ li {
     width: 100%;
     padding: 24px 24px 0 24px;
     left: 0;
-    right: 0; } }
+    right: 0;
+    display: none; } }
 
 .wrapper-main-banner {
   background-image: url(../assets/utex-banner.jpg);
