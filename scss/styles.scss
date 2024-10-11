@@ -8,6 +8,7 @@
 @import './components/cards';
 @import './components/buttons';
 @import './components/product';
+@import './components/queries';
 
 
 .wrapper-main-banner {
@@ -19,7 +20,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         background-size: contain;
       }
 }
@@ -34,7 +35,7 @@
     align-content: center;
     flex-direction: column;
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         height: 40vh;
       }
 

@@ -1,9 +1,10 @@
 @import "./colors";
 @import "./fonts";
+@import "./queries";
 
 $size-variant: 40px;
 $border-variant: 2px solid $dark-800;
-$radius-variant: 8px;
+$radius-variant: 0;
 
 
 .wrapper-products-banner {
@@ -12,7 +13,7 @@ $radius-variant: 8px;
     width: 100%;
     height: auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         padding-top: 112px;
       }
 }
@@ -20,9 +21,9 @@ $radius-variant: 8px;
 .product-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 48px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         display: flex;
         flex-direction: column;
       }
@@ -36,6 +37,15 @@ $radius-variant: 8px;
     display: flex;
     gap: 16px;
     width: 100%;
+    padding: 0 0 0 144px;
+
+    @media (max-width: $xl) {
+        padding: 0;
+    }
+
+    @media (max-width: $md) {
+        padding: 0;
+       }
 }
 
 .product-thumbnails {
@@ -54,7 +64,7 @@ $radius-variant: 8px;
 }
 
 .product-img-thumbnail {
-    width: 80px;
+    width: 64px;
     text-decoration: none;
     padding: 12px;
     background-color: $dark-050;
@@ -81,8 +91,7 @@ $radius-variant: 8px;
 }
 
 .product-info {
-    padding: 32px 0;
-
+    padding: 0;
 }
 
 .product-title-wrapper {
@@ -247,7 +256,7 @@ $radius-variant: 8px;
     color: $dark-050;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
        width: 100%;
       }
 }
@@ -270,7 +279,7 @@ $radius-variant: 8px;
 }
 
 .product-stock-section {
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         z-index: 10;
         position: fixed;
         bottom: 0;
