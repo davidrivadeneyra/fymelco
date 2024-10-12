@@ -2203,7 +2203,7 @@ li {
 
 @media (max-width: 768px) {
   .product-stock-section {
-    z-index: 10;
+    z-index: 20;
     position: fixed;
     bottom: 0;
     background-color: #FFFFFF;
