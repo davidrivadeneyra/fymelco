@@ -28,7 +28,7 @@ $dark-050: #FFFFFF;
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: $dark-700;
+  color: $dark-050;
 }
 
 .text-strong {
@@ -63,3 +63,6 @@ $dark-050: #FFFFFF;
   text-align: center;
 }
 
+.color-white {
+  color: $dark-050;
+}
