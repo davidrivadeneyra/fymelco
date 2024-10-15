@@ -1,5 +1,8 @@
 @import './colors';
 
+$height-header-desktop: 72px;
+$height-header-mobile: 56px;
+
 .header {
     display: flex;
     align-items: center;
@@ -10,7 +13,7 @@
     width: 100%;
     box-sizing: border-box;
     background-color: $dark-600;
-    height: 72px;
+    height: $height-header-desktop;
 
     &__menu {
         display: none;
@@ -92,8 +95,8 @@
   
   @media (max-width: 1280px) {
     .header {
-      padding: 16px 24px;
-      height: 56px;
+      padding: 0 24px;
+      height: $height-header-mobile;
 
       &__left {
         display: none;
@@ -112,7 +115,7 @@
 
       &__logo-mobile {
         display: block;
-        width: 96px;
+        height: 32px;
     }
 
       &__menu {
@@ -158,7 +161,7 @@
   }
 
   .topbar {
-    background-color: $dark-700;
+    background-color: $green-600;
     display: flex;
     position: relative;
     padding: 8px 32px;
@@ -198,10 +201,9 @@
   }
 
   .header-white {
-    // z-index: 20;
     position: fixed;
     top: 56;
-    background-color: $dark-050;
+    background-color: $dark-600;
     transition: transform 0.3s ease;
   }
 

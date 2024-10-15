@@ -78,8 +78,8 @@ a {
 .relative {
   position: relative; }
 
-.color-background-strong {
-  background-color: #010101; }
+.color-background-footer {
+  background-color: #6E6D72; }
 
 .none {
   display: none; }
@@ -101,13 +101,13 @@ a {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -487,7 +487,7 @@ li {
 
 @media (max-width: 1280px) {
   .header {
-    padding: 16px 24px;
+    padding: 0 24px;
     height: 56px; }
     .header__left {
       display: none; }
@@ -499,7 +499,7 @@ li {
       display: none; }
     .header__logo-mobile {
       display: block;
-      width: 96px; }
+      height: 32px; }
     .header__menu {
       display: block; }
     .header__heart {
@@ -526,7 +526,7 @@ li {
     align-items: flex-start; } }
 
 .topbar {
-  background-color: #515155;
+  background-color: #353B2B;
   display: flex;
   position: relative;
   padding: 8px 32px;
@@ -559,7 +559,7 @@ li {
 .header-white {
   position: fixed;
   top: 56;
-  background-color: #FFFFFF;
+  background-color: #6E6D72;
   transition: transform 0.3s ease; }
 
 .background-base {
@@ -618,13 +618,13 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -753,7 +753,7 @@ li {
   max-width: 1440px;
   margin: 0 auto;
   padding: 64px 32px;
-  background-color: #010101;
+  background-color: #6E6D72;
   color: #BEC2C5; }
   .footer__row {
     display: flex;
@@ -828,7 +828,7 @@ li {
     display: none; } }
 
 .footer-mobile {
-  background-color: #010101;
+  background-color: #6E6D72;
   display: block;
   padding: 64px 24px; }
 
@@ -953,10 +953,6 @@ li {
   height: 40px;
   width: 40px; }
 
-.banner-title {
-  display: flex;
-  align-items: center; }
-
 .background-base {
   background-color: #F5F5F5;
   position: relative; }
@@ -1013,13 +1009,13 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1558,13 +1554,13 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1806,13 +1802,13 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -2223,20 +2219,94 @@ li {
     right: 0; } }
 
 .wrapper-main-banner {
-  background-image: url(../assets/banner.webp);
-  padding-top: 112px;
-  margin-bottom: 72px;
+  position: relative;
   width: 100%;
   height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+  margin-bottom: 64px; }
+
+.banner-slider {
+  margin-top: 72px; }
   @media (max-width: 768px) {
-    .wrapper-main-banner {
-      background-size: cover; } }
+    .banner-slider {
+      margin-top: 56px; } }
+
+.banner-slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.banner-slides .banner-slide {
+  display: none;
+  width: 100%; }
+
+.banner-slides .banner-slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+.banner-slides .banner-slide {
+  width: 100%; }
+
+.banner-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; }
+
+.dots {
+  position: absolute;
+  bottom: 32px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 50%;
+  transform: translateX(-50%); }
+
+.dots .dot {
+  cursor: pointer;
+  margin: 4px;
+  width: 12px;
+  height: 12px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #BEC2C5; }
+
+.dots .dot.active {
+  background-color: #6E6D72; }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #1C1F22;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.prev {
+  left: 2px; }
+
+.next {
+  right: 2px; }
 
 .main-banner {
-  height: 50vh;
+  position: absolute;
+  width: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -2246,9 +2316,6 @@ li {
   justify-content: center;
   align-content: center;
   flex-direction: column; }
-  @media (max-width: 768px) {
-    .main-banner {
-      height: 40vh; } }
 
 .titles-section {
   text-align: center;
