@@ -233,8 +233,8 @@
 
 }
 .footer-mobile-button {
-  background-color: $dark-100;
-  color: $dark-700;
+  background-color: $dark-900;
+  color: $dark-050;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
@@ -245,7 +245,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: $dark-100;
+    background-color: $dark-700;
   }
 
 }

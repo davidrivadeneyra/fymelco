@@ -20,7 +20,7 @@ a {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -29,10 +29,10 @@ a {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -82,7 +82,7 @@ a {
   display: none; }
 
 .section-padding-bottom {
-  margin-bottom: 40px; }
+  margin-bottom: 96px; }
 
 .italic {
   font-style: italic; }
@@ -92,21 +92,9 @@ a {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 600;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-300.woff2");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-400.woff2");
-  font-weight: 400;
-  font-style: italic; }
 
 @font-face {
   font-family: 'Descriptions';
@@ -116,7 +104,7 @@ a {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -129,9 +117,10 @@ h6 {
   font-family: 'Heading', sans-serif;
   font-weight: 600;
   line-height: 1.1;
-  color: #1C1F22; }
+  color: #6E6D72; }
 
 p,
+a,
 span,
 label,
 select,
@@ -140,25 +129,25 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #585D62; }
+  color: #6E6D72; }
 
 .headline-bigger {
-  font-size: 72px; }
-  @media (max-width: 768px) {
-    .headline-bigger {
-      font-size: 32px; } }
-
-.headline-big {
   font-size: 48px; }
   @media (max-width: 768px) {
-    .headline-big {
-      font-size: 24px; } }
+    .headline-bigger {
+      font-size: 28px; } }
 
-.headline-regular {
+.headline-big {
   font-size: 32px; }
   @media (max-width: 768px) {
+    .headline-big {
+      font-size: 21px; } }
+
+.headline-regular {
+  font-size: 19px; }
+  @media (max-width: 768px) {
     .headline-regular {
-      font-size: 22px; } }
+      font-size: 16px; } }
 
 .headline-big-italic {
   font-weight: 300;
@@ -170,10 +159,10 @@ li {
 
 .headline-small {
   font-weight: 600;
-  font-size: 19px; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .headline-small {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .headline-small-italic {
   font-weight: 300;
@@ -184,11 +173,11 @@ li {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headliner-smaller {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .p-regular {
   font-weight: 400;
@@ -247,7 +236,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -256,10 +245,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -340,7 +329,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -349,10 +338,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -385,7 +374,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -394,10 +383,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -431,8 +420,8 @@ li {
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  background-color: #FFFFFF;
-  height: 64px; }
+  background-color: #6E6D72;
+  height: 72px; }
   .header__menu {
     display: none; }
   .header__logo-mobile {
@@ -480,7 +469,7 @@ li {
       gap: 16px; }
       .header .mobile-menu__list__item a {
         text-decoration: none;
-        color: #585D62;
+        color: #515155;
         font-size: 1.5rem; }
 
 @media (max-width: 1280px) {
@@ -524,7 +513,7 @@ li {
     align-items: flex-start; } }
 
 .topbar {
-  background-color: #010101;
+  background-color: #515155;
   display: flex;
   position: relative;
   padding: 8px 32px;
@@ -534,13 +523,13 @@ li {
   z-index: 100; }
 
 .header__logo {
-  width: 128px; }
+  height: 48px; }
 
 .header__icon {
   color: #FFFFFF; }
 
 .icon-green {
-  color: #1C1F22; }
+  color: #FFFFFF; }
 
 .icon-white {
   color: #FFFFFF; }
@@ -568,7 +557,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -577,10 +566,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -607,21 +596,9 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 600;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-300.woff2");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-400.woff2");
-  font-weight: 400;
-  font-style: italic; }
 
 @font-face {
   font-family: 'Descriptions';
@@ -631,7 +608,7 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -644,9 +621,10 @@ h6 {
   font-family: 'Heading', sans-serif;
   font-weight: 600;
   line-height: 1.1;
-  color: #1C1F22; }
+  color: #6E6D72; }
 
 p,
+a,
 span,
 label,
 select,
@@ -655,25 +633,25 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #585D62; }
+  color: #6E6D72; }
 
 .headline-bigger {
-  font-size: 72px; }
-  @media (max-width: 768px) {
-    .headline-bigger {
-      font-size: 32px; } }
-
-.headline-big {
   font-size: 48px; }
   @media (max-width: 768px) {
-    .headline-big {
-      font-size: 24px; } }
+    .headline-bigger {
+      font-size: 28px; } }
 
-.headline-regular {
+.headline-big {
   font-size: 32px; }
   @media (max-width: 768px) {
+    .headline-big {
+      font-size: 21px; } }
+
+.headline-regular {
+  font-size: 19px; }
+  @media (max-width: 768px) {
     .headline-regular {
-      font-size: 22px; } }
+      font-size: 16px; } }
 
 .headline-big-italic {
   font-weight: 300;
@@ -685,10 +663,10 @@ li {
 
 .headline-small {
   font-weight: 600;
-  font-size: 19px; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .headline-small {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .headline-small-italic {
   font-weight: 300;
@@ -699,11 +677,11 @@ li {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headliner-smaller {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .p-regular {
   font-weight: 400;
@@ -793,7 +771,7 @@ li {
             flex: 1; }
           .footer__row.footer__links .footer__column .footer__newsletter .footer__button {
             background-color: #F7F7F7;
-            color: #585D62;
+            color: #515155;
             padding: 8px 16px;
             border: none;
             cursor: pointer;
@@ -904,7 +882,7 @@ li {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.6;
-  color: #585D62;
+  color: #515155;
   padding-bottom: 16px; }
 
 .footer-mobile-form {
@@ -914,7 +892,7 @@ li {
 
 .footer-mobile-input {
   background-color: #FFFFFF;
-  color: #585D62;
+  color: #515155;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
@@ -926,8 +904,8 @@ li {
   width: 100%; }
 
 .footer-mobile-button {
-  background-color: #F7F7F7;
-  color: #585D62;
+  background-color: #010101;
+  color: #FFFFFF;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
@@ -937,7 +915,7 @@ li {
   line-height: 1.6;
   text-transform: uppercase; }
   .footer-mobile-button:hover {
-    background-color: #F7F7F7; }
+    background-color: #515155; }
 
 .footer-mobile-social {
   display: flex;
@@ -966,7 +944,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -975,10 +953,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -1005,21 +983,9 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 600;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-300.woff2");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-400.woff2");
-  font-weight: 400;
-  font-style: italic; }
 
 @font-face {
   font-family: 'Descriptions';
@@ -1029,7 +995,7 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1042,9 +1008,10 @@ h6 {
   font-family: 'Heading', sans-serif;
   font-weight: 600;
   line-height: 1.1;
-  color: #1C1F22; }
+  color: #6E6D72; }
 
 p,
+a,
 span,
 label,
 select,
@@ -1053,25 +1020,25 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #585D62; }
+  color: #6E6D72; }
 
 .headline-bigger {
-  font-size: 72px; }
-  @media (max-width: 768px) {
-    .headline-bigger {
-      font-size: 32px; } }
-
-.headline-big {
   font-size: 48px; }
   @media (max-width: 768px) {
-    .headline-big {
-      font-size: 24px; } }
+    .headline-bigger {
+      font-size: 28px; } }
 
-.headline-regular {
+.headline-big {
   font-size: 32px; }
   @media (max-width: 768px) {
+    .headline-big {
+      font-size: 21px; } }
+
+.headline-regular {
+  font-size: 19px; }
+  @media (max-width: 768px) {
     .headline-regular {
-      font-size: 22px; } }
+      font-size: 16px; } }
 
 .headline-big-italic {
   font-weight: 300;
@@ -1083,10 +1050,10 @@ li {
 
 .headline-small {
   font-weight: 600;
-  font-size: 19px; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .headline-small {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .headline-small-italic {
   font-weight: 300;
@@ -1097,11 +1064,11 @@ li {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headliner-smaller {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .p-regular {
   font-weight: 400;
@@ -1163,9 +1130,8 @@ li {
 
 .card {
   background-color: #FFFFFF;
-  flex: 0 0 calc((100% - 4 * 16px) / 5);
+  flex: 0 0 calc((100% - 3 * 16px) / 4);
   text-align: center;
-  border-radius: 16px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02), 0 5px 8px rgba(0, 0, 0, 0.015); }
 
 @media (max-width: 768px) {
@@ -1178,7 +1144,7 @@ li {
 .card-img-wrapper {
   position: relative;
   display: block;
-  padding: 24px 24px 8px; }
+  padding: 8px 0 8px; }
 
 .card-img {
   width: 100%;
@@ -1191,7 +1157,7 @@ li {
   width: 18px;
   top: 16px;
   right: 16px;
-  color: #585D62; }
+  color: #515155; }
 
 .card-big-section {
   display: flex;
@@ -1245,7 +1211,7 @@ li {
   width: 40px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #6E6D72;
   position: absolute;
   cursor: pointer; }
 
@@ -1345,22 +1311,23 @@ li {
 .card-categories-section {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   padding: 0;
   width: 100%;
   transition: transform 0.3s ease-in-out;
   overflow: hidden; }
   @media (max-width: 728px) {
     .card-categories-section {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); } }
 
 .card-categorie {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .card-categorie-img-wrapper {
   display: flex;
@@ -1368,8 +1335,8 @@ li {
   align-items: center;
   background-color: #FFFFFF;
   overflow: hidden;
-  padding: 24px;
-  border-radius: 16px;
+  padding: 0;
+  border-radius: 0;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02), 0 5px 8px rgba(0, 0, 0, 0.015); }
 
 .card-categorie-image {
@@ -1478,6 +1445,38 @@ li {
       width: 600px;
       right: -128px; } }
 
+.card-info-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; }
+  @media (max-width: 728px) {
+    .card-info-section {
+      grid-template-columns: repeat(1, 1fr); } }
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  text-align: center;
+  width: 100%; }
+
+.card-info-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0; }
+
+.card-info-image {
+  height: 96px;
+  width: 96px; }
+
 .background-base {
   background-color: #F5F5F5;
   position: relative; }
@@ -1486,7 +1485,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -1495,10 +1494,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -1525,21 +1524,9 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 600;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-300.woff2");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-400.woff2");
-  font-weight: 400;
-  font-style: italic; }
 
 @font-face {
   font-family: 'Descriptions';
@@ -1549,7 +1536,7 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1562,9 +1549,10 @@ h6 {
   font-family: 'Heading', sans-serif;
   font-weight: 600;
   line-height: 1.1;
-  color: #1C1F22; }
+  color: #6E6D72; }
 
 p,
+a,
 span,
 label,
 select,
@@ -1573,25 +1561,25 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #585D62; }
+  color: #6E6D72; }
 
 .headline-bigger {
-  font-size: 72px; }
-  @media (max-width: 768px) {
-    .headline-bigger {
-      font-size: 32px; } }
-
-.headline-big {
   font-size: 48px; }
   @media (max-width: 768px) {
-    .headline-big {
-      font-size: 24px; } }
+    .headline-bigger {
+      font-size: 28px; } }
 
-.headline-regular {
+.headline-big {
   font-size: 32px; }
   @media (max-width: 768px) {
+    .headline-big {
+      font-size: 21px; } }
+
+.headline-regular {
+  font-size: 19px; }
+  @media (max-width: 768px) {
     .headline-regular {
-      font-size: 22px; } }
+      font-size: 16px; } }
 
 .headline-big-italic {
   font-weight: 300;
@@ -1603,10 +1591,10 @@ li {
 
 .headline-small {
   font-weight: 600;
-  font-size: 19px; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .headline-small {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .headline-small-italic {
   font-weight: 300;
@@ -1617,11 +1605,11 @@ li {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headliner-smaller {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .p-regular {
   font-weight: 400;
@@ -1705,7 +1693,7 @@ li {
   border-radius: 100%; }
 
 .button-slider-icon {
-  color: #585D62;
+  color: #515155;
   height: 24px;
   width: 24px; }
 
@@ -1741,7 +1729,7 @@ li {
   background-color: #FFFFFF; }
 
 .button {
-  background-color: #585D62;
+  background-color: #515155;
   display: flex;
   align-self: center;
   padding-left: 48px;
@@ -1750,10 +1738,10 @@ li {
   padding-bottom: 8px;
   border-radius: 16px;
   border: none;
-  color: #585D62; }
+  color: #515155; }
 
 .text-strong {
-  color: #585D62; }
+  color: #515155; }
 
 .text-green-600 {
   color: #1C1F22; }
@@ -1780,21 +1768,9 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/RalewayRegular-600.woff2");
+  src: url("/assets/fonts/Droid-Sans-700.woff2");
   font-weight: 600;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-300.woff2");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Heading';
-  src: url("/assets/fonts/RalewayItalic-400.woff2");
-  font-weight: 400;
-  font-style: italic; }
 
 @font-face {
   font-family: 'Descriptions';
@@ -1804,7 +1780,7 @@ li {
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/PlusJakarta-700.woff2");
+  src: url("/assets/fonts/Droid-Sans-400.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1817,9 +1793,10 @@ h6 {
   font-family: 'Heading', sans-serif;
   font-weight: 600;
   line-height: 1.1;
-  color: #1C1F22; }
+  color: #6E6D72; }
 
 p,
+a,
 span,
 label,
 select,
@@ -1828,25 +1805,25 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #585D62; }
+  color: #6E6D72; }
 
 .headline-bigger {
-  font-size: 72px; }
-  @media (max-width: 768px) {
-    .headline-bigger {
-      font-size: 32px; } }
-
-.headline-big {
   font-size: 48px; }
   @media (max-width: 768px) {
-    .headline-big {
-      font-size: 24px; } }
+    .headline-bigger {
+      font-size: 28px; } }
 
-.headline-regular {
+.headline-big {
   font-size: 32px; }
   @media (max-width: 768px) {
+    .headline-big {
+      font-size: 21px; } }
+
+.headline-regular {
+  font-size: 19px; }
+  @media (max-width: 768px) {
     .headline-regular {
-      font-size: 22px; } }
+      font-size: 16px; } }
 
 .headline-big-italic {
   font-weight: 300;
@@ -1858,10 +1835,10 @@ li {
 
 .headline-small {
   font-weight: 600;
-  font-size: 19px; }
+  font-size: 16px; }
   @media (max-width: 768px) {
     .headline-small {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .headline-small-italic {
   font-weight: 300;
@@ -1872,11 +1849,11 @@ li {
       font-size: 16px; } }
 
 .headliner-smaller {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1; }
   @media (max-width: 768px) {
     .headliner-smaller {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .p-regular {
   font-weight: 400;
@@ -2213,17 +2190,17 @@ li {
     right: 0; } }
 
 .wrapper-main-banner {
-  background-image: url(../assets/utex-banner.jpg);
+  background-image: url(../assets/banner.webp);
   padding-top: 112px;
-  margin-bottom: -48px;
+  margin-bottom: 72px;
   width: 100%;
   height: auto;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
   @media (max-width: 768px) {
     .wrapper-main-banner {
-      background-size: contain; } }
+      background-size: cover; } }
 
 .main-banner {
   height: 50vh;
@@ -2237,3 +2214,10 @@ li {
   @media (max-width: 768px) {
     .main-banner {
       height: 40vh; } }
+
+.titles-section {
+  text-align: center;
+  margin-bottom: 32px; }
+  @media (max-width: 768px) {
+    .titles-section {
+      margin-bottom: 32px; } }

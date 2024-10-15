@@ -1,20 +1,8 @@
 @font-face {
   font-family: 'Heading';
-  src: url('/assets/fonts/RalewayRegular-600.woff2');
+  src: url('/assets/fonts/Droid-Sans-700.woff2');
   font-weight: 600;
   font-style: normal;
-}
-@font-face {
-  font-family: 'Heading';
-  src: url('/assets/fonts/RalewayItalic-300.woff2');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Heading';
-  src: url('/assets/fonts/RalewayItalic-400.woff2');
-  font-weight: 400;
-  font-style: italic;
 }
 @font-face {
   font-family: 'Descriptions';
@@ -24,7 +12,7 @@
 }
 @font-face {
   font-family: 'Descriptions';
-  src: url('/assets/fonts/PlusJakarta-700.woff2');
+  src: url('/assets/fonts/Droid-Sans-400.woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -38,10 +26,11 @@ h6 {
   font-family: 'Heading', sans-serif;
   font-weight: 600;
   line-height: 1.1;
-  color: $dark-800;
+  color: $dark-600;
 }
 
-p, 
+p,
+a, 
 span,
 label,
 select,
@@ -50,29 +39,29 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: $dark-700;
+  color: $dark-600;
 }
 
 .headline-bigger {
-  font-size: 72px;
+  font-size: 48px;
   @media (max-width: 768px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
 .headline-big {
-  font-size: 48px;
+  font-size: 32px;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 
 .headline-regular {
-  font-size: 32px;
+  font-size: 19px;
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
@@ -88,10 +77,10 @@ li {
 
 .headline-small {
   font-weight: 600;
-  font-size: 19px;
+  font-size: 16px;
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .headline-small-italic {
@@ -105,11 +94,11 @@ li {
 }
 
 .headliner-smaller {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1;
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

@@ -9,8 +9,8 @@
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    background-color: $dark-050;
-    height: 64px;
+    background-color: $dark-600;
+    height: 72px;
 
     &__menu {
         display: none;
@@ -158,7 +158,7 @@
   }
 
   .topbar {
-    background-color: $dark-900;
+    background-color: $dark-700;
     display: flex;
     position: relative;
     padding: 8px 32px;
@@ -170,7 +170,7 @@
   
 
   .header__logo {
-    width: 128px;
+    height: 48px;
   }
 
   .header__icon {
@@ -178,7 +178,7 @@
   }
 
   .icon-green {
-    color: $dark-800;
+    color: $dark-050;
   }
 
   .icon-white {
