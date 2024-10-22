@@ -681,7 +681,8 @@ li {
   @media (max-width: 1024px) {
     .header-main-icon {
       display: block;
-      height: 16px; } }
+      height: 16px;
+      cursor: pointer; } }
 
 .search {
   fill: #AF0923; }
@@ -730,7 +731,11 @@ li {
       z-index: 50;
       background-color: #fff;
       width: 360px;
-      height: 100vh; } }
+      height: 100vh;
+      display: none; } }
+
+.show-menu {
+  display: flex; }
 
 .header-navigation-list {
   display: flex;
@@ -759,6 +764,9 @@ li {
   gap: 4px;
   height: 100%;
   padding: 8px; }
+  @media (max-width: 1024px) {
+    .header-navigation-item {
+      height: 48px; } }
 
 .header-navigation-item div {
   color: #fff;
@@ -779,14 +787,28 @@ li {
 
 .header-navigation-list-item-wrapper {
   position: relative; }
+  @media (max-width: 1100px) {
+    .header-navigation-list-item-wrapper {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px; } }
 
 .header-submenu {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 48px;
   background-color: #fff;
   z-index: 20; }
+  @media (max-width: 1024px) {
+    .header-submenu {
+      display: none;
+      position: relative;
+      top: 0px; } }
+
+.header-submenu-show {
+  display: flex; }
 
 .header-button {
   padding: 12px 16px;
@@ -796,10 +818,8 @@ li {
   color: #1C1F22;
   text-wrap: nowrap; }
 
-.header-submenu {
-  display: none; }
-
 .header-submenu a:hover {
+  display: flex;
   background-color: #BF1E2E;
   color: #FFFFFF;
   cursor: pointer; }
@@ -842,7 +862,9 @@ li {
   display: none; }
   @media (max-width: 1024px) {
     .submenu-icon-black {
-      display: block; } }
+      display: block;
+      height: 32px;
+      width: 32px; } }
 
 .submenu-icon-white {
   display: block; }

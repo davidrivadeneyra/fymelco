@@ -173,6 +173,7 @@ display: none;
   @media (max-width: $lg) {
     display: block;
     height: 16px;
+    cursor: pointer;
   }
   
 }
@@ -236,7 +237,12 @@ display: none;
     background-color: $white;
     width: 360px;
     height: 100vh;
+    display: none;
   }
+}
+
+.show-menu {
+  display: flex;
 }
 
 .header-navigation-list {
@@ -271,6 +277,10 @@ display: none;
   gap: 4px;
   height: 100%;
   padding: $padding-items;
+
+  @media (max-width: $lg) {
+    height: 48px;
+  }
 }
 
 .header-navigation-item div {
@@ -285,6 +295,10 @@ display: none;
 
 .header-navigation-item img {
   height: 14px;
+
+  @media (max-width: $lg) {
+    
+  }
 }
 
 .whatsapp{
@@ -301,15 +315,32 @@ display: none;
 
 .header-navigation-list-item-wrapper {
   position: relative;
+
+  @media (max-width: $lgx) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }  
 }
 
 .header-submenu {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: $header-navigation-content-height - 8px;
   background-color: $white;
   z-index: 20;
+
+  @media (max-width: $lg) {
+    display: none;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.header-submenu-show {
+  display: flex;
 }
 
 .header-button {
@@ -320,13 +351,11 @@ display: none;
   color: $dark-800;
   text-wrap: nowrap;
   
-}
 
-.header-submenu {
-  display: none;
 }
 
 .header-submenu a:hover {
+  display: flex;
   background-color: $red-400;
   color: $dark-050;
   cursor: pointer;
@@ -378,6 +407,8 @@ display: none;
 
   @media (max-width: $lg) {
     display: block;
+    height: 32px;
+    width: 32px;
   }
 
   
