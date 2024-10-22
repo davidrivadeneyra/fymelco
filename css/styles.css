@@ -12,8 +12,11 @@ img {
 a {
   text-decoration: none; }
 
+ul, li {
+  list-style: none; }
+
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -95,19 +98,25 @@ a {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
-  font-weight: 600;
+  src: url("/assets/fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/Montserrat-ExtraLight.woff2");
+  font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/WorkSans-Regular.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
+  src: url("/assets/fonts/WorkSans-Bold.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -132,7 +141,7 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #6E6D72; }
+  color: #1C1F22; }
 
 .headline-bigger {
   font-size: 48px;
@@ -204,11 +213,11 @@ li {
     .p-smaller {
       font-size: 10px; } }
 
-.b-regular {
+.b-regular, .header-navigation-link-strong {
   font-weight: 700;
   font-size: 16px; }
   @media (max-width: 768px) {
-    .b-regular {
+    .b-regular, .header-navigation-link-strong {
       font-size: 14px; } }
 
 .b-small {
@@ -225,15 +234,15 @@ li {
     .b-small {
       font-size: 12px; } }
 
-.b-smaller {
+.b-smaller, .topbar-text {
   font-weight: 700;
   font-size: 12px; }
   @media (max-width: 768px) {
-    .b-smaller {
+    .b-smaller, .topbar-text {
       font-size: 10px; } }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -279,6 +288,9 @@ li {
 
 .color-white {
   color: #FFFFFF; }
+
+.max-width {
+  max-width: 1440px; }
 
 .layout-full-width {
   width: 100%;
@@ -329,7 +341,7 @@ li {
       overflow-x: hidden; } }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -377,7 +389,7 @@ li {
   color: #FFFFFF; }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -424,146 +436,422 @@ li {
 .color-white {
   color: #FFFFFF; }
 
-.header {
+.background-base {
+  background-color: #F0F0F0;
+  position: relative; }
+
+.background-strong {
+  background-color: #FFFFFF; }
+
+.button {
+  background-color: #515155;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 32px;
+  align-self: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
+  border: none;
+  color: #FFFFFF; }
+
+.text-strong {
+  color: #515155; }
+
+.text-green-600 {
+  color: #1C1F22; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.divider-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center; }
+
+.divider-line {
+  flex-grow: 1;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #F7F7F7; }
+
+.divider-text {
+  text-align: center; }
+
+.color-white {
+  color: #FFFFFF; }
+
+.max-width {
+  max-width: 1440px; }
+
+.layout-full-width {
+  width: 100%;
+  overflow-x: hidden; }
+
+.layout-container {
   max-width: 1440px;
   margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #6E6D72;
-  height: 72px; }
-  .header__menu {
-    display: none; }
-  .header__logo-mobile {
-    display: none; }
-  .header__left, .header__right {
-    display: flex;
-    align-items: center;
-    gap: 16px; }
-  .header__center {
-    flex: 1;
-    display: flex;
-    justify-content: center; }
-    .header__center .nav__list {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-      padding: 0;
-      margin: 0; }
-      .header__center .nav__list .nav__item a {
-        text-decoration: none; }
-  .header__logo {
-    width: 120px;
-    height: auto; }
-  .header__icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer; }
-  .header .mobile-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    padding: 32px 24px;
-    box-sizing: border-box;
-    z-index: 100; }
-    .header .mobile-menu__list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 16px; }
-      .header .mobile-menu__list__item a {
-        text-decoration: none;
-        color: #515155;
-        font-size: 1.5rem; }
+  padding-left: 32px;
+  padding-right: 32px; }
+  @media (max-width: 768px) {
+    .layout-container {
+      padding-left: 24px;
+      padding-right: 24px;
+      overflow-x: hidden; } }
 
-@media (max-width: 1280px) {
-  .header {
-    padding: 0 24px;
-    height: 56px; }
-    .header__left {
-      display: none; }
-    .header__right {
-      width: 100%; }
-    .header__right-user-bag {
-      justify-content: end; }
-    .header__logo {
-      display: none; }
-    .header__logo-mobile {
-      display: block;
-      height: 32px; }
-    .header__menu {
-      display: block; }
-    .header__heart {
-      display: none; }
-    .header__menu {
-      display: block; }
-    .header__center {
-      display: none; }
-    .header__left .header__menu-icon,
-    .header__left .header__search-icon {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-      margin-right: 16px; }
-    .header__right .header__user-icon,
-    .header__right .header__bag-icon {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-      margin-left: 16px; }
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; } }
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px; }
+  @media (max-width: 768px) {
+    .header {
+      padding-left: 24px;
+      padding-right: 24px;
+      overflow-x: hidden; } }
+
+.main-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px; }
+  @media (max-width: 768px) {
+    .main-content {
+      padding-left: 24px;
+      padding-right: 24px;
+      overflow-x: hidden; } }
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px; }
+  @media (max-width: 768px) {
+    .footer {
+      padding-left: 24px;
+      padding-right: 24px;
+      overflow-x: hidden; } }
+
+.layout-full-width {
+  overflow: visible; }
+
+.header-main-responsive {
+  display: block; }
+  @media (max-width: 1024px) {
+    .header-main-responsive {
+      display: flex;
+      flex-direction: row;
+      width: 100%; } }
 
 .topbar {
-  background-color: #353B2B;
   display: flex;
-  position: relative;
-  padding: 8px 32px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  height: 32px;
+  margin: auto; }
+
+.topbar span {
+  font-size: 14px; }
+
+.header-main {
+  background-color: #fff;
+  height: 96px;
+  display: flex;
+  align-items: center; }
+
+.header-navigation {
+  background-color: #BF1E2E;
+  position: relative; }
+  @media (max-width: 1024px) {
+    .header-navigation {
+      background-color: #fff;
+      height: 56px;
+      width: 56px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+.header-main,
+.header-navigation {
+  width: 100%;
+  position: relative; }
+  @media (max-width: 1024px) {
+    .header-main,
+    .header-navigation {
+      height: 56px; } }
+
+.header-main-content,
+.header-navigation-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .header-main-content,
+    .header-navigation-content {
+      padding-left: 24px;
+      padding-right: 24px;
+      overflow-x: hidden; } }
+
+.header-main-content {
+  justify-content: space-between; }
+  @media (max-width: 1024px) {
+    .header-main-content {
+      padding-right: 0; } }
+
+.header-main-logo-link {
+  display: inline-flex; }
+
+.header-logo {
+  height: 32px; }
+  @media (max-width: 1024px) {
+    .header-logo {
+      height: 28px; } }
+
+.header-search-icon {
+  height: 16px; }
+
+.header-map-icon,
+.header-cart-icon {
+  height: 16px; }
+
+.header-search-icon-mobile {
+  display: none; }
+  @media (max-width: 1024px) {
+    .header-search-icon-mobile {
+      display: block;
+      height: 16px; } }
+
+.header-search {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #BF1E2E;
+  padding: 0 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0 128px; }
+  @media (max-width: 1024px) {
+    .header-search {
+      display: none; } }
+
+.header-search input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 14px; }
+
+.header-search input::placeholder,
+.header-search input::-webkit-input-placeholder {
+  color: #BEC2C5;
+  font-size: 14px; }
+
+.header-search input:focus {
+  outline: none; }
+
+.header-search input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none; }
+
+.header-info {
+  display: flex;
+  gap: 48px; }
+  @media (max-width: 1024px) {
+    .header-info {
+      gap: 16px; } }
+
+.header-main-map-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+
+.header-main-icon {
+  display: none; }
+  @media (max-width: 1024px) {
+    .header-main-icon {
+      display: block;
+      height: 16px; } }
+
+.search {
+  fill: #AF0923; }
+
+.header-my-account {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content; }
+
+.header-my-account span {
+  line-height: 110%;
+  font-size: 10px;
+  color: #6E6D72; }
+
+.header-my-account p {
+  line-height: 110%;
+  font-size: 14px;
+  white-space: nowrap; }
+
+@media (max-width: 1024px) {
+  .header-my-account {
+    display: none; } }
+
+.header-usd {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  white-space: nowrap; }
+
+.header-usd span {
+  font-size: 14px; }
+  @media (max-width: 1024px) {
+    .header-usd span {
+      display: none; } }
+
+.header-navigation-content {
+  justify-content: center;
+  height: 56px;
+  position: relative; }
+  @media (max-width: 1024px) {
+    .header-navigation-content {
+      position: absolute;
+      top: 56px;
+      right: 0;
+      z-index: 50;
+      background-color: #fff;
+      width: 360px;
+      height: 100vh; } }
+
+.header-navigation-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 100%;
+  gap: 2px; }
+  @media (max-width: 1100px) {
+    .header-navigation-list {
+      font-size: 12px; } }
+  @media (max-width: 1024px) {
+    .header-navigation-list {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; } }
+
+.submenu {
+  position: relative; }
+
+.header-navigation-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding: 8px; }
+
+.header-navigation-item div {
+  color: #fff;
+  text-wrap: nowrap; }
+  @media (max-width: 1024px) {
+    .header-navigation-item div {
+      color: #515155; } }
+
+.header-navigation-item img {
+  height: 14px; }
+
+.whatsapp {
+  height: 20px !important; }
+
+@media (max-width: 1100px) {
+  .header-navigation-link-strong {
+    font-size: 14px !important; } }
+
+.header-navigation-list-item-wrapper {
+  position: relative; }
+
+.header-submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 48px;
+  background-color: #fff;
+  z-index: 20; }
+
+.header-button {
+  padding: 12px 16px;
+  font-size: 12px;
+  text-transform: none;
+  background-color: #fff;
+  color: #1C1F22;
+  text-wrap: nowrap; }
+
+.header-submenu {
+  display: none; }
+
+.header-submenu a:hover {
+  background-color: #BF1E2E;
+  color: #FFFFFF;
+  cursor: pointer; }
+
+.header-navigation-list-item-wrapper:hover .header-submenu {
+  display: flex; }
+
+.topbar-slider {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background-color: #83101C; }
+
+.topbar-slide {
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100; }
+  height: 30px; }
 
-.header__logo {
-  height: 48px; }
+.topbar-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  text-transform: uppercase; }
 
-.header__icon {
-  color: #FFFFFF; }
+.topbar-text.active {
+  opacity: 1;
+  transform: translateX(0); }
 
-.icon-green {
-  color: #FFFFFF; }
+.topbar-text.exit {
+  opacity: 0;
+  transform: translateX(-100%); }
 
-.icon-white {
-  color: #FFFFFF; }
+.submenu-icon-black {
+  display: none; }
+  @media (max-width: 1024px) {
+    .submenu-icon-black {
+      display: block; } }
 
-.header-fixed {
-  position: fixed;
-  z-index: 100; }
-
-.header-transparent {
-  position: fixed;
-  top: 56;
-  transition: transform 0.3s ease; }
-
-.header-white {
-  position: fixed;
-  top: 56;
-  background-color: #6E6D72;
-  transition: transform 0.3s ease; }
+.submenu-icon-white {
+  display: block; }
+  @media (max-width: 1024px) {
+    .submenu-icon-white {
+      display: none; } }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -612,19 +900,25 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
-  font-weight: 600;
+  src: url("/assets/fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/Montserrat-ExtraLight.woff2");
+  font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/WorkSans-Regular.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
+  src: url("/assets/fonts/WorkSans-Bold.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -649,7 +943,7 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #6E6D72; }
+  color: #1C1F22; }
 
 .headline-bigger {
   font-size: 48px;
@@ -721,11 +1015,11 @@ li {
     .p-smaller {
       font-size: 10px; } }
 
-.b-regular {
+.b-regular, .header-navigation-link-strong {
   font-weight: 700;
   font-size: 16px; }
   @media (max-width: 768px) {
-    .b-regular {
+    .b-regular, .header-navigation-link-strong {
       font-size: 14px; } }
 
 .b-small {
@@ -742,11 +1036,11 @@ li {
     .b-small {
       font-size: 12px; } }
 
-.b-smaller {
+.b-smaller, .topbar-text {
   font-weight: 700;
   font-size: 12px; }
   @media (max-width: 768px) {
-    .b-smaller {
+    .b-smaller, .topbar-text {
       font-size: 10px; } }
 
 .footer {
@@ -954,7 +1248,7 @@ li {
   width: 40px; }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -1003,19 +1297,25 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
-  font-weight: 600;
+  src: url("/assets/fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/Montserrat-ExtraLight.woff2");
+  font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/WorkSans-Regular.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
+  src: url("/assets/fonts/WorkSans-Bold.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1040,7 +1340,7 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #6E6D72; }
+  color: #1C1F22; }
 
 .headline-bigger {
   font-size: 48px;
@@ -1112,11 +1412,11 @@ li {
     .p-smaller {
       font-size: 10px; } }
 
-.b-regular {
+.b-regular, .header-navigation-link-strong {
   font-weight: 700;
   font-size: 16px; }
   @media (max-width: 768px) {
-    .b-regular {
+    .b-regular, .header-navigation-link-strong {
       font-size: 14px; } }
 
 .b-small {
@@ -1133,11 +1433,11 @@ li {
     .b-small {
       font-size: 12px; } }
 
-.b-smaller {
+.b-smaller, .topbar-text {
   font-weight: 700;
   font-size: 12px; }
   @media (max-width: 768px) {
-    .b-smaller {
+    .b-smaller, .topbar-text {
       font-size: 10px; } }
 
 .slider {
@@ -1499,7 +1799,7 @@ li {
   width: 96px; }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -1548,19 +1848,25 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
-  font-weight: 600;
+  src: url("/assets/fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/Montserrat-ExtraLight.woff2");
+  font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/WorkSans-Regular.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
+  src: url("/assets/fonts/WorkSans-Bold.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1585,7 +1891,7 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #6E6D72; }
+  color: #1C1F22; }
 
 .headline-bigger {
   font-size: 48px;
@@ -1657,11 +1963,11 @@ li {
     .p-smaller {
       font-size: 10px; } }
 
-.b-regular {
+.b-regular, .header-navigation-link-strong {
   font-weight: 700;
   font-size: 16px; }
   @media (max-width: 768px) {
-    .b-regular {
+    .b-regular, .header-navigation-link-strong {
       font-size: 14px; } }
 
 .b-small {
@@ -1678,11 +1984,11 @@ li {
     .b-small {
       font-size: 12px; } }
 
-.b-smaller {
+.b-smaller, .topbar-text {
   font-weight: 700;
   font-size: 12px; }
   @media (max-width: 768px) {
-    .b-smaller {
+    .b-smaller, .topbar-text {
       font-size: 10px; } }
 
 .button-slider-left {
@@ -1747,7 +2053,7 @@ li {
   left: 19%; }
 
 .background-base {
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   position: relative; }
 
 .background-strong {
@@ -1796,19 +2102,25 @@ li {
 
 @font-face {
   font-family: 'Heading';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
-  font-weight: 600;
+  src: url("/assets/fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Heading';
+  src: url("/assets/fonts/Montserrat-ExtraLight.woff2");
+  font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-400.woff2");
+  src: url("/assets/fonts/WorkSans-Regular.woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Descriptions';
-  src: url("/assets/fonts/Droid-Sans-700.woff2");
+  src: url("/assets/fonts/WorkSans-Bold.woff2");
   font-weight: 700;
   font-style: normal; }
 
@@ -1833,7 +2145,7 @@ details,
 li {
   font-family: 'Descriptions', sans-serif;
   line-height: 1.6;
-  color: #6E6D72; }
+  color: #1C1F22; }
 
 .headline-bigger {
   font-size: 48px;
@@ -1905,11 +2217,11 @@ li {
     .p-smaller {
       font-size: 10px; } }
 
-.b-regular {
+.b-regular, .header-navigation-link-strong {
   font-weight: 700;
   font-size: 16px; }
   @media (max-width: 768px) {
-    .b-regular {
+    .b-regular, .header-navigation-link-strong {
       font-size: 14px; } }
 
 .b-small {
@@ -1926,11 +2238,11 @@ li {
     .b-small {
       font-size: 12px; } }
 
-.b-smaller {
+.b-smaller, .topbar-text {
   font-weight: 700;
   font-size: 12px; }
   @media (max-width: 768px) {
-    .b-smaller {
+    .b-smaller, .topbar-text {
       font-size: 10px; } }
 
 .wrapper-products-banner {
@@ -2225,10 +2537,10 @@ li {
   margin-bottom: 64px; }
 
 .banner-slider {
-  margin-top: 72px; }
+  margin-bottom: 72px; }
   @media (max-width: 768px) {
     .banner-slider {
-      margin-top: 56px; } }
+      margin-bottom: 56px; } }
 
 .banner-slides {
   display: flex;
@@ -2251,7 +2563,7 @@ li {
 
 .banner-img {
   width: 100%;
-  height: 500px;
+  height: auto;
   object-fit: cover; }
 
 .dots {

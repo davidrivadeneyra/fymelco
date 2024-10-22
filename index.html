@@ -7,72 +7,124 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="background-base">
-
     <!-- Header -->
-    <header class="layout-full-width header-fixed">
+    <header class="layout-full-width">
         <div class="topbar"> 
-            <p class="p-smaller uppercase text-white">Registrate y obtené un 15% de descuento en tu primera compra (no acumulable con otras promociones)</p>
+            <p class="p-smaller"><span class="b-small">Llamá al 2203 1443</span> 
+                Lun a Jue 8hrs a 17hrs Vie 8hrs a 12hrs y de 13hrs a 17hrs)</p>
         </div>   
-        <div id="whiteHeader" class="layout-full-width header-white">
-            <div class="header">
-                <div class="header__left">
-                    <a href="/"><img src="assets/logos/brand/misterkook.svg" alt="Logo" class="header__logo" /></a>
-                  </div>
-                  <div class="header__center">
-                    <nav class="nav">
-                      <ul class="nav__list scrolleditems">
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-green" href="#">Productos</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-green" href="#">Contacto</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-green" href="#">Quiénes Somos</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-green" href="#">Mayorista</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-green" href="#">Preguntas Frecuentes</a></li>
-                        <li class="nav__item b-small uppercase">
-                            <a class="icon-green" href="#">Tarjetas de Regalo</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                  <div class="header__right">
-                      <div class="header__right">
-                            <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green header__menu">
-                              <use xlink:href="icons/menu.svg#menu"></use>
-                            </svg>
-                            <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green">
-                              <use xlink:href="icons/search.svg#search"></use>
-                            </svg>
-                      </div>
-              
-                      <img src="assets/logos/brand/misterkook.svg" alt="Logo" class="header__logo-mobile" />
-                  <div class="header__right header__right-user-bag">
-                      <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green">
-                          <use xlink:href="icons/user.svg#user"></use>
-                        </svg>
-                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green header__heart" >
-                          <use xlink:href="icons/heart.svg#heart"></use>
-                        </svg>
-                        <svg viewBox="0 0 100 100" alt="Icono 3" class="header__icon icon-green" >
-                          <use xlink:href="icons/bag.svg#bag"></use>
-                        </svg>
-                  </div>
-                   
-                  </div>
-                  <!-- Menú Mobile -->
-                  <div class="mobile-menu" id="mobileMenu">
-                    <ul class="mobile-menu__list">
-                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Productos</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Contacto</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Quiénes Somos</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Mayorista</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Preguntas Frecuentes</a></li>
-                      <li class="mobile-menu__item b-small text-white uppercase icon-green"><a href="#">Tarjetas de Regalo</a></li>
-                    </ul>
-                  </div>
+        <div class="layout-full-width header-main-responsive">
+            <div class="header-main">
+                <div class="header-main-content">
+                    <a class="header-main-logo-link" href="/"><img class="header-logo" src="assets/logos/brand/fymelco-logo.svg" alt="Logo"/></a>
+                    
+                    <div class="header-search">
+                        <img class="header-search-icon" src="/icons/search-red.svg" alt="map">
+                        <input placeholder="Buscar productos" type="search" id="site-search" name="Buscar productos" />
+                    </div>
+                    
+                    <div class="header-info">
+                        <img class="header-search-icon-mobile" src="/icons/search-black.svg" alt="map">
+                        <a class="header-my-account" href="/">
+                            <span class="p-smaller">Bienvenido</span>
+                            <p class="b-regular">Mi cuenta</p>
+                        </a>
+                        <a class="header-main-map-link" href="/">
+                            <img class="header-map-icon" src="/icons/pin.svg" alt="map">
+                        </a>
+                        <a class="header-usd" href="/">
+                            <span class="b-regular">USD <span>0</span></span>
+                            <img class="header-cart-icon" src="/icons/cart.svg" alt="map">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>         
+            <div class="header-navigation">
+                <img class="header-main-icon" src="/icons/menu.svg" alt="map">
+                <div class="header-navigation-content">
+                    <ul class="header-navigation-list">
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                                <div class="header-navigation-link">Electrodomésticos</div>
+                                <img class="submenu-icon-white" src="/icons/triangle-down.svg" alt="">
+                                <img class="submenu-icon-black" src="/icons/triangle-down-black.svg" alt="">
+                            </a> 
+                            <div class="header-submenu">
+                                <a class="header-button" href="/">Anafes</a>
+                                <a class="header-button" href="/">Cafarenas</a>
+                                <a class="header-button" href="/">Calienta platos</a>
+                                <a class="header-button" href="/">Campanas</a>
+                                <a class="header-button" href="/">Heladeras</a>
+                                <a class="header-button" href="/">Hornos</a>
+                            </div> 
+                        </li>
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                                <div >Piletas de cocina</div>
+                                <img class="submenu-icon-white" src="/icons/triangle-down.svg" alt="">
+                                <img class="submenu-icon-black" src="/icons/triangle-down-black.svg" alt="">
+                            </a>
+                            <div class="header-submenu">
+                                <a class="header-button" href="/">Simples</a>
+                                <a class="header-button" href="/">Profesionales</a>
+                                <a class="header-button" href="/">Mesadas</a>
+                                <a class="header-button" href="/">Dobles</a>
+                                <a class="header-button" href="/">Bachas</a>
+                            </div> 
+                        </li>
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                                <div class="header-navigation-link">Accesorios</div>
+                                <img class="submenu-icon-white" src="/icons/triangle-down.svg" alt="">
+                                <img class="submenu-icon-black" src="/icons/triangle-down-black.svg" alt="">
+                            </a>
+                            <div class="header-submenu">
+                                <a class="header-button" href="/">Accesorios Tramontina</a>
+                                <a class="header-button" href="/">Desagües Tramontina</a>
+                            </div>                      
+                        </li>
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                                <div class="header-navigation-link">Grifería de cocina</div>
+                                <img class="submenu-icon-white" src="/icons/triangle-down.svg" alt="">
+                                <img class="submenu-icon-black" src="/icons/triangle-down-black.svg" alt="">
+                            </a>
+                            <div class="header-submenu">
+                                <a class="header-button" href="/">Acero inoxidable</a>
+                                <a class="header-button" href="/">Cromada</a>
+                            </div>  
+                        </li>
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                            <div class="header-navigation-link">Oportunidadades</div>
+                            
+                            </a>
+                           
+                        </li>
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                            <div class="header-navigation-link">Contacto</div>
+                            
+                            </a>
+                           
+                        </li>
+                        <li class="header-navigation-list-item-wrapper">
+                            <a class="header-navigation-item" href="/">
+                                <img class="whatsapp" src="/icons/whastapp.svg" alt="">
+                                <div class="header-navigation-link-strong">097 316 240</div>
+                            </a>
+                          
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="topbar-slider"> 
+            <div class="topbar-slide">
+                <p class="p-smaller topbar-text active">Envíos a todo Uruguay</p>
+                <p class="p-smaller topbar-text">Todo para tu hogar</p>
+            </div>
+        </div>       
     </header>
 
     <!-- Banner Slider -->
@@ -82,19 +134,21 @@
             
             <div class="banner-slides">
                 <div class="main-banner">
-                    <div class="banner-title">
-                        <h1 class="headline-bigger color-white">Manteles impermeables</h1>
-                        <button class="p-regular button uppercase">Ver más</button>
-                    </div>
                 </div>
                 <div class="banner-slide fade">
-                    <img class="banner-img" src="./assets/banner-slider/banner-01.png" alt="Imagen 1">
+                    <img class="banner-img" src="./assets/banner-slider/banner-01.jpeg" alt="Imagen 1">
                 </div>
                 <div class="banner-slide fade">
-                    <img class="banner-img" src="./assets/banner-slider/banner-02.png" alt="Imagen 2">
+                    <img class="banner-img" src="./assets/banner-slider/banner-02.jpeg" alt="Imagen 2">
                 </div>
                 <div class="banner-slide fade">
-                    <img class="banner-img" src="./assets/banner-slider/banner-03.png" alt="Imagen 3">
+                    <img class="banner-img" src="./assets/banner-slider/banner-03.jpeg" alt="Imagen 3">
+                </div>
+                <div class="banner-slide fade">
+                    <img class="banner-img" src="./assets/banner-slider/banner-04.jpeg" alt="Imagen 3">
+                </div>
+                <div class="banner-slide fade">
+                    <img class="banner-img" src="./assets/banner-slider/banner-05.jpeg" alt="Imagen 3">
                 </div>
                 <a href="#" class="prev" title="Previous">&#10094</a>
                 <a href="#" class="next" title="Next">&#10095</a>
@@ -152,7 +206,6 @@
       
       <!-- Card section    -->
       </section>
-
 
       <section class="layout-full-width padding-64 section-padding-bottom">
           <div class="layout-container hidden">
@@ -374,8 +427,6 @@
        
     </section>
   
-
-
     <section class="layout-full-width-footer ">
         <div class="footer-register-mobile">
             <label class="footer-mobile-headline ">Registrate y obtené un 15% of</label>
@@ -507,6 +558,7 @@
       </footer>
 <script src="minicards.js"></script>
 <script src="banner-slider.js"></script>
+<script src="textslider.js"></script>
     
 </body>
 

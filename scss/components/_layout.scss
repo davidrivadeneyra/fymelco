@@ -21,6 +21,10 @@ $padding-mobile: 24px;
   }
 }
 
+.max-width {
+  max-width: $max-width;
+}
+
 .layout-full-width {
     width: 100%;
     overflow-x: hidden 
