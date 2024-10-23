@@ -1,9 +1,24 @@
-const toggleBtn = document.getElementById("toggle-button")
+const openBtn = document.getElementById("open-button")
+const closeBtn = document.getElementById("close-button")
 const menu = document.getElementById("menu")
+const overlay = document.getElementById("overlay")
 
-toggleBtn.addEventListener('click', ()=> {
-    menu.classList.toggle('show-menu')
+
+openBtn.addEventListener('click', ()=> {
+    menu.classList.add('show-menu')
+    overlay.classList.add('menu-overlay')
 })
+
+closeBtn.addEventListener('click', (e)=> {
+    e.stopPropagation()
+    menu.classList.remove('show-menu')
+    overlay.classList.remove('menu-overlay')
+    console.log('me tocaron')
+})
+
+
+
+
 
 // behavior menu subitems mobile
 const menuItems = document.querySelectorAll('.header-navigation-list-item-wrapper')
