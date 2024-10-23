@@ -1501,6 +1501,9 @@ li {
 .footer-logo {
   height: 32px;
   margin-bottom: 16px; }
+  @media (max-width: 768px) {
+    .footer-logo {
+      height: 20px; } }
 
 .footer-date-right {
   display: grid;
@@ -1568,7 +1571,7 @@ li {
   height: 28px; }
   @media (max-width: 768px) {
     .footer-busisness-logo-adquiria {
-      height: 20px; } }
+      height: 18px; } }
 
 .background-base {
   background-color: #F6F7F8;
